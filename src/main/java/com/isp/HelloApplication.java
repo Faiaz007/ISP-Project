@@ -1,4 +1,4 @@
-package com.isp.isp;
+package com.isp;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

@@ -3,6 +3,6 @@ module com.isp.isp {
     requires javafx.fxml;
 
 
-    opens com.isp.isp to javafx.fxml;
-    exports com.isp.isp;
+    opens com.isp to javafx.fxml;
+    exports com.isp;
 }

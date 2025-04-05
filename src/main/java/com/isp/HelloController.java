@@ -1,4 +1,4 @@
-package com.isp.isp;
+package com.isp;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
