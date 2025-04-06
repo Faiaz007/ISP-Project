@@ -6,4 +6,6 @@ module com.isp.isp {
 
     opens com.isp to javafx.fxml;
     exports com.isp;
+    exports com.isp.faiaz;
+    opens com.isp.faiaz to javafx.fxml;
 }
