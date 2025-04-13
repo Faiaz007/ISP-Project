@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isp.fardeen.SystemAdminDashboard">
+   <children>
+      <Button layoutX="257.0" layoutY="59.0" mnemonicParsing="false" onAction="#goal1BtnOnClick" text="Goal 1" />
+      <Button layoutX="265.0" layoutY="152.0" mnemonicParsing="false" onAction="#goal2BtnOnClick" text="Goal 2" />
+      <Button layoutX="265.0" layoutY="253.0" mnemonicParsing="false" onAction="#goal3BtnOnClick" text="Goal 3" />
+      <Button layoutX="265.0" layoutY="335.0" mnemonicParsing="false" onAction="#goal4BtnOnClick" text="Goal 4" />
+   </children>
+</AnchorPane>
