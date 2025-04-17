@@ -9,11 +9,20 @@ import java.io.IOException;
 
 public class SceneSwitcher {
     public static Stage stage;
-
-    public static void switchScene(Stage stage) throws IOException {
-        Parent root = FXMLLoader.load(SceneSwitcher.class.getResource("login-view.fxml"));
+    public static void setStage(Stage s) {
+        stage = s ;
+    }
+    public static void switchTo(String fxmlFile) throws IOException {
+        Parent root = FXMLLoader.load(SceneSwitcher.class.getResource("/com/isp/faiaz/" + fxmlFile));
         Scene scene = new Scene(root);
         stage.setScene(scene);
+        stage.show();
     }
+
+
+    public static void switchToDashboard() throws IOException {
+        switchTo("Dashboard.fxml");
+    }
+
 
 }
