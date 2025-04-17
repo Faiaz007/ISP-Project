@@ -6,7 +6,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="addUserPane" xmlns:fx="http://javafx.com/fxml" fx:controller="controller.AddUserController">
+<AnchorPane fx:id="addUserPane" xmlns:fx="http://javafx.com/fxml" fx:controller="D:\ISP-Project\src\main\java\com\isp\fardeen\AddUserController.java">
     <children>
         <Label text="Add New User" layoutX="14" layoutY="14" />
         <TextField fx:id="nameField" layoutX="14" layoutY="50" promptText="Name" />
