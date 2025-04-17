@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="networkOpsPane" xmlns:fx="http://javafx.com/fxml" fx:controller="controller.NetworkOperationsController">
+    <children>
+        <Label text="Network Operations" layoutX="14" layoutY="14" />
+        <TableView fx:id="networkStatusTable" layoutX="14" layoutY="50" prefHeight="200" />
+        <Button text="Assign Issue" layoutX="14" layoutY="260" onAction="#handleAssignIssue" />
+        <Label fx:id="notificationLabel" layoutX="14" layoutY="300" />
+    </children>
+</AnchorPane>
