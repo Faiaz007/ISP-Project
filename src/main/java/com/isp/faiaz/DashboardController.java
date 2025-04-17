@@ -27,7 +27,8 @@ public class DashboardController
     }
 
     @javafx.fxml.FXML
-    public void handleMarketing(ActionEvent actionEvent) {
+    public void handleMarketing(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("marketingManagerDashboard.fxml");
     }
 
     @javafx.fxml.FXML
