@@ -1,0 +1,46 @@
+package com.isp.musficur;
+
+import javafx.event.ActionEvent;
+
+public class MarketingManagerDashboardController
+{
+    @javafx.fxml.FXML
+    public void initialize() {
+    }
+
+    @javafx.fxml.FXML
+    public void advertisementButtonOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void CustomerNeedsButtonOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void logoutButtonOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void colaborationButtonOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void promotionalOfferButtonOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void marketingPlanButtonOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void marketingPreferencesButtonOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void marketingReportButtonOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void campaignSuccessButtonOnAction(ActionEvent actionEvent) {
+    }
+}

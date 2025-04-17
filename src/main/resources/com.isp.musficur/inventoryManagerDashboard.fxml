@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="461.0" prefWidth="838.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isp.musficur.InventoryManagerDashboardController">
+   <children>
+      <Label layoutX="218.0" layoutY="44.0" text="Wellcome Inventory Manager">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="306.0" layoutY="97.0" text="Please select any tab for the next process" />
+      <Button layoutX="22.0" layoutY="135.0" mnemonicParsing="false" onAction="#inventoryLevelButtonOnAction" prefHeight="82.0" prefWidth="192.0" text="Track Inventory level" />
+      <Button layoutX="223.0" layoutY="135.0" mnemonicParsing="false" onAction="#orderEquipmentButtonOnAction" prefHeight="82.0" prefWidth="192.0" text="Order New Equipment" />
+      <Button layoutX="424.0" layoutY="135.0" mnemonicParsing="false" onAction="#equipmenrDistributionButtonOnAction" prefHeight="82.0" prefWidth="192.0" text="Manage Equipment Distribution" />
+      <Button layoutX="624.0" layoutY="135.0" mnemonicParsing="false" onAction="#inventoryRecordButtonOnAction" prefHeight="82.0" prefWidth="192.0" text="Update Inventory Record" />
+      <Button layoutX="22.0" layoutY="244.0" mnemonicParsing="false" onAction="#generateInventoryReportsButtonOnAction" prefHeight="82.0" prefWidth="192.0" text="Generate Inventory Reports" />
+      <Button layoutX="223.0" layoutY="244.0" mnemonicParsing="false" onAction="#conductAuditsButtonOnAction" prefHeight="82.0" prefWidth="192.0" text="Conduct Inventory Audits" />
+      <Button layoutX="424.0" layoutY="244.0" mnemonicParsing="false" onAction="#notifyTechnicianButtonOnAction" prefHeight="82.0" prefWidth="209.0" text="Notify Technicians about Equipment" />
+      <Button layoutX="640.0" layoutY="244.0" mnemonicParsing="false" onAction="#equipmentReturnButtonOnAction" prefHeight="82.0" prefWidth="176.0" text="Handle Equipment Return" />
+      <Button layoutX="736.0" layoutY="389.0" mnemonicParsing="false" onAction="#logoutButtonOnAction" prefHeight="36.0" prefWidth="80.0" text="Logout" />
+   </children>
+</AnchorPane>
