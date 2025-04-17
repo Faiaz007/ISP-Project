@@ -1,6 +1,9 @@
 package com.isp.musficur;
 
+import com.isp.SceneSwitcher;
 import javafx.event.ActionEvent;
+
+import java.io.IOException;
 
 public class MarketingManagerDashboardController
 {
@@ -17,7 +20,8 @@ public class MarketingManagerDashboardController
     }
 
     @javafx.fxml.FXML
-    public void logoutButtonOnAction(ActionEvent actionEvent) {
+    public void logoutButtonOnAction(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("login-view.fxml");
     }
 
     @javafx.fxml.FXML

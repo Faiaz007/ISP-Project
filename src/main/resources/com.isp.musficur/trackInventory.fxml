@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isp.musficur.TrackInventoryController">
+   <children>
+      <TextField fx:id="idTextField" layoutX="102.0" layoutY="97.0" />
+      <TextField fx:id="quantityTextField" layoutX="102.0" layoutY="132.0" />
+      <TextField fx:id="equipementTypeTextField" layoutX="101.0" layoutY="163.0" />
+      <Label layoutX="77.0" layoutY="101.0" text="ID:" />
+      <Label layoutX="8.0" layoutY="167.0" prefHeight="17.0" prefWidth="94.0" text="Equipment Type:" />
+      <Label layoutX="43.0" layoutY="136.0" text="Quantity:" />
+      <Label layoutX="175.0" layoutY="35.0" text="Inventory Tracking Dashboard">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="46.0" layoutY="200.0" mnemonicParsing="false" onAction="#getDataButtonOnAction" text="Get Data" />
+      <Button layoutX="195.0" layoutY="200.0" mnemonicParsing="false" onAction="#displayButtonOnAction" text="Display" />
+      <TableView fx:id="inventoryOutputTableView" layoutX="437.0" layoutY="67.0" prefHeight="186.0" prefWidth="149.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button layoutX="13.0" layoutY="350.0" mnemonicParsing="false" onAction="#previousButtonOnAction" text="Previous" />
+      <Button layoutX="521.0" layoutY="350.0" mnemonicParsing="false" onAction="#logOutButtonOnAction" text="Log Out" />
+   </children>
+</AnchorPane>

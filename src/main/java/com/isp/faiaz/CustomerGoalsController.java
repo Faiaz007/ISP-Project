@@ -12,11 +12,13 @@ public class CustomerGoalsController
     }
 
     @javafx.fxml.FXML
-    public void handleDataUsage(ActionEvent actionEvent) {
+    public void handleDataUsage(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("DataUsage.fxml");
     }
 
     @javafx.fxml.FXML
-    public void handleReportIssue(ActionEvent actionEvent) {
+    public void handleReportIssue(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("ReportIssue.fxml");
     }
 
     @javafx.fxml.FXML
@@ -24,7 +26,8 @@ public class CustomerGoalsController
     }
 
     @javafx.fxml.FXML
-    public void handleRequestService(ActionEvent actionEvent) {
+    public void handleRequestService(ActionEvent actionEvent) throws IOException {
+
     }
 
     @javafx.fxml.FXML

@@ -19,7 +19,8 @@ public class DashboardController
     }
 
     @javafx.fxml.FXML
-    public void handleInventory(ActionEvent actionEvent) {
+    public void handleInventory(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("inventoryManagerDashboard.fxml");
     }
 
     @javafx.fxml.FXML
