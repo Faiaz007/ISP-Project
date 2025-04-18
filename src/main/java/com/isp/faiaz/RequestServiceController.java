@@ -7,6 +7,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.paint.Color;
 
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Random;
 
@@ -64,9 +65,20 @@ public class RequestServiceController {
             return;
         }
 
-        // Simulate payment success
+
         confirmationMessage.setText("Payment successful! Your " + selectedPlan + " plan is now active.");
         confirmationMessage.setTextFill(Color.GREEN);
+        try (FileWriter fileWriter = new FileWriter("service_requests.txt", true)) {
+            fileWriter.write("Plan: " + selectedPlan + "\n");
+            fileWriter.write("Payment Method: " + selectedMethod + "\n");
+            fileWriter.write("Status: Confirmed\n");
+            fileWriter.write("Time: " + java.time.LocalDateTime.now() + "\n");
+            fileWriter.write("--------------------------------------\n");
+        } catch (IOException e) {
+            confirmationMessage.setText("Could not save service request.");
+            confirmationMessage.setTextFill(Color.RED);
+            e.printStackTrace();
+        }
     }
 
     @FXML

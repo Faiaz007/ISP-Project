@@ -13,6 +13,7 @@ public class InventoryManagerDashboardController
 
     @javafx.fxml.FXML
     public void equipmenrDistributionButtonOnAction(ActionEvent actionEvent) {
+
     }
 
     @javafx.fxml.FXML

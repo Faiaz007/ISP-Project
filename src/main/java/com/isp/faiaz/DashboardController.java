@@ -1,7 +1,7 @@
 package com.isp.faiaz;
+
 import com.isp.SceneSwitcher;
 import javafx.event.ActionEvent;
-import javafx.scene.control.Button;
 
 import java.io.IOException;
 
@@ -37,7 +37,8 @@ public class DashboardController
     }
 
     @javafx.fxml.FXML
-    public void handleBillingManager(ActionEvent actionEvent) {
+    public void handleBillingManager(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("BillingManagerGoals.fxml");
     }
 
     @javafx.fxml.FXML
