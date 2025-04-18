@@ -8,7 +8,7 @@ import javafx.scene.control.TableView;
 public class Errors
 {
     @javafx.fxml.FXML
-    private TableColumn systemErrorsTableColumn;
+    private TableColumn <"string,systemErrors"> systemErrorsTableColumn;
     @javafx.fxml.FXML
     private TableView errorTableView;
     @javafx.fxml.FXML
