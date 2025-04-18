@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="408.0" prefWidth="418.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isp.fardeen.Reports">
+    <children>
+        <Label layoutX="18.0" layoutY="14.0" text="Generate Reports" />
+        <ComboBox fx:id="reportTypeComboBox" layoutX="14" layoutY="50" />
+        <Button layoutX="14" layoutY="90" onAction="#generateReportOnAction" text="Generate Report" />
+        <TableView fx:id="reportTableView" layoutX="14" layoutY="130" prefHeight="200" prefWidth="314.0">
+         <columns>
+            <TableColumn fx:id="userActivityTableColumn" prefWidth="128.80005168914795" text="User Activity" />
+            <TableColumn fx:id="networkPerformanceTableColumn" prefWidth="184.00002136230466" text="Network Performance" />
+         </columns></TableView>
+        <Button layoutX="14" layoutY="340" onAction="#exportOnAction" text="Export" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="347.0" prefWidth="418.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.isp.fardeen.AddNewUser">
+    <children>
+        <Label layoutX="171.0" layoutY="29.0" text="Add New User" />
+        <ComboBox fx:id="roleComboBox" layoutX="33.0" layoutY="174.0" />
+        <Button layoutX="25.0" layoutY="215.0" onAction="#addUserOnAction" text="Add User" />
+        <Label fx:id="confirmationLabel" layoutX="14" layoutY="210" />
+      <Label layoutX="32.0" layoutY="68.0" prefHeight="18.0" prefWidth="50.0" text="Name :" />
+      <Label layoutX="33.0" layoutY="105.0" prefHeight="18.0" prefWidth="50.0" text="Email :" />
+      <TextField fx:id="nameTextField" layoutX="97.0" layoutY="65.0" />
+      <TextField fx:id="emailTextField" layoutX="98.0" layoutY="102.0" />
+    </children>
+</AnchorPane>
