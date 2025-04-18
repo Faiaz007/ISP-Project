@@ -22,11 +22,13 @@ public class CustomerGoalsController
     }
 
     @javafx.fxml.FXML
-    public void handlePayBills(ActionEvent actionEvent) {
+    public void handlePayBills(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("PayBills.fxml");
     }
 
     @javafx.fxml.FXML
     public void handleRequestService(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("RequestService.fxml");
 
     }
 

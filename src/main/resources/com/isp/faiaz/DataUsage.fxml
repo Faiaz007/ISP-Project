@@ -17,7 +17,6 @@
         <DatePicker fx:id="fromDate" layoutX="20" layoutY="50" prefHeight="25.0" prefWidth="138.0" promptText="From Date" />
         <DatePicker fx:id="toDate" layoutX="185.0" layoutY="50.0" prefHeight="25.0" prefWidth="138.0" promptText="To Date" />
         <Button layoutX="352.0" layoutY="50.0" onAction="#handleFilterUsage" prefHeight="25.0" prefWidth="64.0" text="Filter" />
-
         <TableView fx:id="dataUsageTableView" layoutX="29.0" layoutY="90.0" prefHeight="220" prefWidth="542.0">
             <columns>
                 <TableColumn fx:id="userIdColumn" prefWidth="100" text="User ID" />
@@ -27,7 +26,6 @@
                 <TableColumn fx:id="timeSlotColumn" prefWidth="100" text="Time Slot" />
             </columns>
         </TableView>
-
         <Button layoutX="45.0" layoutY="343.0" onAction="#handleExportPdf" text="Export as PDF" />
         <Button layoutX="480.0" layoutY="343.0" onAction="#handleBackButton" prefHeight="25.0" prefWidth="73.0" text="Go Back" />
 

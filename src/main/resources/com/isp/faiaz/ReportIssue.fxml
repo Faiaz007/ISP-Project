@@ -11,22 +11,12 @@
 
 
         <Label layoutX="20" layoutY="20" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Report an Issue" />
-
-
         <Label layoutX="20" layoutY="60" text="Issue Type:" />
         <ComboBox fx:id="issueTypeComboBox" layoutX="100" layoutY="55" prefWidth="200" />
-
-
         <Label layoutX="20" layoutY="100" text="Description:" />
         <TextArea fx:id="descriptionTextArea" layoutX="20" layoutY="125" prefHeight="120" prefWidth="560" promptText="Describe the issue you're facing..." />
-
-
         <Button layoutX="25.0" layoutY="269.0" onAction="#handleSubmitIssue" prefWidth="150" text="Submit Report" />
-
-
         <Label fx:id="confirmationLabel" layoutX="20" layoutY="300" style="-fx-font-style: italic;" textFill="green" />
-
-        
         <Button layoutX="500" layoutY="322.0" onAction="#handleBackButton" prefHeight="53.0" prefWidth="80" text="Go Back" />
 
     </children>
