@@ -1,8 +1,11 @@
 package com.isp.musficur;
 
+import com.isp.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+
+import java.io.IOException;
 
 public class TrackInventoryController
 {
@@ -20,7 +23,8 @@ public class TrackInventoryController
     }
 
     @javafx.fxml.FXML
-    public void previousButtonOnAction(ActionEvent actionEvent) {
+    public void previousButtonOnAction(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("inventoryManagerDashboard.fxml");
     }
 
     @javafx.fxml.FXML
@@ -28,7 +32,8 @@ public class TrackInventoryController
     }
 
     @javafx.fxml.FXML
-    public void logOutButtonOnAction(ActionEvent actionEvent) {
+    public void logOutButtonOnAction(ActionEvent actionEvent) throws IOException{
+        SceneSwitcher.switchTo("login-view.fxml");
     }
 
     @javafx.fxml.FXML

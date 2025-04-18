@@ -5,22 +5,22 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="497.0" prefWidth="888.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isp.musficur.MarketingManagerDashboardController">
+<AnchorPane prefHeight="495.0" prefWidth="827.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isp.musficur.MarketingManagerDashboardController">
    <children>
-      <Label layoutX="243.0" layoutY="46.0" text="Wellcome Marketing Manager">
+      <Label layoutX="227.0" layoutY="47.0" text="Wellcome Marketing Manager">
          <font>
             <Font size="30.0" />
          </font>
       </Label>
-      <Label layoutX="330.0" layoutY="101.0" text="Please select any tab for the next process" />
-      <Button layoutX="35.0" layoutY="142.0" mnemonicParsing="false" onAction="#marketingPlanButtonOnAction" prefHeight="82.0" prefWidth="192.0" text="Create Marketing Plan" />
-      <Button layoutX="247.0" layoutY="142.0" mnemonicParsing="false" onAction="#campaignSuccessButtonOnAction" prefHeight="82.0" prefWidth="192.0" text="Measure Campaign Success" />
-      <Button layoutX="458.0" layoutY="142.0" mnemonicParsing="false" onAction="#CustomerNeedsButtonOnAction" prefHeight="82.0" prefWidth="192.0" text="Understanding Customer Needs" />
-      <Button layoutX="662.0" layoutY="142.0" mnemonicParsing="false" onAction="#marketingReportButtonOnAction" prefHeight="82.0" prefWidth="192.0" text="Create marketing Report" />
-      <Button layoutX="35.0" layoutY="274.0" mnemonicParsing="false" onAction="#promotionalOfferButtonOnAction" prefHeight="82.0" prefWidth="192.0" text="Launch Promotional Offer" />
-      <Button layoutX="247.0" layoutY="274.0" mnemonicParsing="false" onAction="#advertisementButtonOnAction" prefHeight="82.0" prefWidth="192.0" text="Create Advertisement" />
-      <Button layoutX="458.0" layoutY="274.0" mnemonicParsing="false" onAction="#colaborationButtonOnAction" prefHeight="82.0" prefWidth="192.0" text="Colab With Sales Team" />
-      <Button layoutX="662.0" layoutY="274.0" mnemonicParsing="false" onAction="#marketingPreferencesButtonOnAction" prefHeight="82.0" prefWidth="192.0" text="Investigate Market Preferences" />
-      <Button layoutX="774.0" layoutY="425.0" mnemonicParsing="false" onAction="#logoutButtonOnAction" prefHeight="36.0" prefWidth="80.0" text="Logout" />
+      <Label layoutX="314.0" layoutY="102.0" text="Please select any tab for the next process" />
+      <Button layoutX="5.0" layoutY="145.0" mnemonicParsing="false" onAction="#marketingPlanButtonOnAction" prefHeight="82.0" prefWidth="192.0" text="Create Marketing Plan" />
+      <Button layoutX="217.0" layoutY="145.0" mnemonicParsing="false" onAction="#campaignSuccessButtonOnAction" prefHeight="82.0" prefWidth="192.0" text="Measure Campaign Success" />
+      <Button layoutX="428.0" layoutY="145.0" mnemonicParsing="false" onAction="#CustomerNeedsButtonOnAction" prefHeight="82.0" prefWidth="192.0" text="Understanding Customer Needs" />
+      <Button layoutX="632.0" layoutY="145.0" mnemonicParsing="false" onAction="#marketingReportButtonOnAction" prefHeight="82.0" prefWidth="192.0" text="Create marketing Report" />
+      <Button layoutX="5.0" layoutY="277.0" mnemonicParsing="false" onAction="#promotionalOfferButtonOnAction" prefHeight="82.0" prefWidth="192.0" text="Launch Promotional Offer" />
+      <Button layoutX="217.0" layoutY="277.0" mnemonicParsing="false" onAction="#advertisementButtonOnAction" prefHeight="82.0" prefWidth="192.0" text="Create Advertisement" />
+      <Button layoutX="428.0" layoutY="277.0" mnemonicParsing="false" onAction="#colaborationButtonOnAction" prefHeight="82.0" prefWidth="192.0" text="Colab With Sales Team" />
+      <Button layoutX="632.0" layoutY="277.0" mnemonicParsing="false" onAction="#marketingPreferencesButtonOnAction" prefHeight="82.0" prefWidth="192.0" text="Investigate Market Preferences" />
+      <Button layoutX="744.0" layoutY="428.0" mnemonicParsing="false" onAction="#logoutButtonOnAction" prefHeight="36.0" prefWidth="80.0" text="Logout" />
    </children>
 </AnchorPane>

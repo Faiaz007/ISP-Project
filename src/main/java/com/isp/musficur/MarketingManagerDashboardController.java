@@ -16,7 +16,8 @@ public class MarketingManagerDashboardController
     }
 
     @javafx.fxml.FXML
-    public void CustomerNeedsButtonOnAction(ActionEvent actionEvent) {
+    public void CustomerNeedsButtonOnAction(ActionEvent actionEvent) throws IOException{
+        SceneSwitcher.switchTo("customerNeeds.fxml");
     }
 
     @javafx.fxml.FXML
@@ -33,7 +34,8 @@ public class MarketingManagerDashboardController
     }
 
     @javafx.fxml.FXML
-    public void marketingPlanButtonOnAction(ActionEvent actionEvent) {
+    public void marketingPlanButtonOnAction(ActionEvent actionEvent) throws IOException{
+        SceneSwitcher.switchTo("marketingPlan.fxml");
     }
 
     @javafx.fxml.FXML
@@ -41,10 +43,12 @@ public class MarketingManagerDashboardController
     }
 
     @javafx.fxml.FXML
-    public void marketingReportButtonOnAction(ActionEvent actionEvent) {
+    public void marketingReportButtonOnAction(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("marketingReport");
     }
 
     @javafx.fxml.FXML
-    public void campaignSuccessButtonOnAction(ActionEvent actionEvent) {
+    public void campaignSuccessButtonOnAction(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("campaign.fxml");
     }
 }
