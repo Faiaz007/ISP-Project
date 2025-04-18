@@ -1,3 +1,13 @@
 Issue Type: null
 Description: fhhhgfghfh
 --------------------------------------------------
+Issue Type: Billing Problem
+Description: Cant pay bill
+
+--------------------------------------------------
+Issue Type: Billing Problem
+Description: aaaaf
+--------------------------------------------------
+Issue Type: Slow Speed
+Description: ffffg
+--------------------------------------------------

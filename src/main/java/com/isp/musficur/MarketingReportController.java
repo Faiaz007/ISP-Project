@@ -1,8 +1,11 @@
 package com.isp.musficur;
 
+import com.isp.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+
+import java.io.IOException;
 
 public class MarketingReportController
 {
@@ -20,11 +23,13 @@ public class MarketingReportController
     }
 
     @javafx.fxml.FXML
-    public void previousButtonOnAction(ActionEvent actionEvent) {
+    public void previousButtonOnAction(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("marketingManagerDashboard.fxml");
     }
 
     @javafx.fxml.FXML
-    public void logOutButtonOnAction(ActionEvent actionEvent) {
+    public void logOutButtonOnAction(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("login-view.fxml");
     }
 
     @javafx.fxml.FXML

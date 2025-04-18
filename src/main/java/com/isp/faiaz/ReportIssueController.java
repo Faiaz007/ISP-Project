@@ -6,6 +6,8 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -17,6 +19,8 @@ public class ReportIssueController
     private TextArea descriptionTextArea;
     @javafx.fxml.FXML
     private Label confirmationLabel;
+    @javafx.fxml.FXML
+    private TextArea issuesTextArea;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -48,5 +52,24 @@ public class ReportIssueController
     @javafx.fxml.FXML
     public void handleBackButton(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchTo("CustomerGoals.fxml");
+    }
+
+    @javafx.fxml.FXML
+    public void handleLoadIssues(ActionEvent actionEvent)  {
+        try (BufferedReader reader = new BufferedReader(new FileReader("data.txt"))) {
+            StringBuilder content = new StringBuilder();
+            String line;
+
+
+            while ((line = reader.readLine()) != null) {
+                content.append(line).append("\n");
+            }
+
+            issuesTextArea.setText(content.toString());
+            confirmationLabel.setText("Issues loaded.");
+        } catch (IOException e) {
+            confirmationLabel.setText("Could not load from file!");
+            e.printStackTrace();
+        }
     }
 }
