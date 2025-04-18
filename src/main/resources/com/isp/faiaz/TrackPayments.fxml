@@ -4,7 +4,9 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="427.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isp.faiaz.TrackPaymentsController">
     <children>
@@ -25,7 +27,8 @@
         <Button layoutX="38.0" layoutY="370.0" onAction="#loadFromFile" text="Load From File" />
         <Button layoutX="150" layoutY="370" onAction="#saveToFile" text="Save To File" />
         <Button layoutX="580" layoutY="370" onAction="#handleBackButton" text="Back" />
-
-        <Label fx:id="messageLabel" layoutX="20" layoutY="410" style="-fx-font-style: italic;" textFill="green" />
+        <TextField fx:id="searchField" layoutX="483.0" layoutY="35.0" onAction="#filterPayments" promptText="Search by Customer ID" />
+        <Label fx:id="messageLabel" layoutX="389.0" layoutY="366.0" prefHeight="30.0" prefWidth="94.0" style="-fx-font-style: italic;" textFill="green" />
+      <Text layoutX="416.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search:" wrappingWidth="41.0" />
     </children>
 </AnchorPane>

@@ -30,9 +30,9 @@ public class TrackPaymentsController
     private TableColumn <Payment, String> customerIdColumn;
     private final ObservableList<Payment> payments = FXCollections.observableArrayList();
     @javafx.fxml.FXML
-    private TextField searchField;
-    @javafx.fxml.FXML
     private Label messageLabel;
+    @javafx.fxml.FXML
+    private TextField searchField;
 
     @javafx.fxml.FXML
     public void initialize() {

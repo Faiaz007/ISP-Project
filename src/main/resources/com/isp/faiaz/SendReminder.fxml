@@ -22,6 +22,6 @@
         <Button layoutX="39.0" layoutY="326.0" onAction="#sendReminders" text="Send Reminders" />
         <Button layoutX="500.0" layoutY="326.0" onAction="#handleBackButton" text="Go Back" />
 
-        <Label fx:id="reminderLabel" layoutX="20" layoutY="330" style="-fx-font-style: italic;" textFill="green" />
+        <Label fx:id="reminderLabel" layoutX="207.0" layoutY="312.0" prefHeight="39.0" prefWidth="200.0" style="-fx-font-style: italic;" textFill="green" />
     </children>
 </AnchorPane>
