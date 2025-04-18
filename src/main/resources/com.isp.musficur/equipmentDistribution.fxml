@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="412.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isp.musficur.EquipmentDistributionController">
    <children>
       <Label layoutX="168.0" layoutY="31.0" text="Equipment Distribution Dashboard">
@@ -22,5 +21,6 @@
       <Label layoutX="64.0" layoutY="210.0" text="Technician Dertails:" />
       <Label fx:id="equipmentDistributionOutputLabel" layoutX="329.0" layoutY="113.0" prefHeight="119.0" prefWidth="265.0" />
       <Button layoutX="163.0" layoutY="248.0" mnemonicParsing="false" onAction="#updateButtonOnAction" prefHeight="25.0" prefWidth="179.0" text="Update &amp; assign to Technician" />
+      <Button layoutX="14.0" layoutY="373.0" mnemonicParsing="false" onAction="#previousButtonOnAction" prefHeight="25.0" prefWidth="66.0" text="Previous" />
    </children>
 </AnchorPane>
