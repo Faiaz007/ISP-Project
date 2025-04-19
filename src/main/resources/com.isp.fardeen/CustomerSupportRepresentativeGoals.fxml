@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="489.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isp.fardeen.CustomerSupportRepresentativeGoalsController">
+   <children>
+      <Button layoutX="80.0" layoutY="137.0" onAction="#serviceRequestsOnAction" text="Service Requests" />
+      <Button layoutX="265.0" layoutY="150.0" onAction="#complaintsOnAction" text="Complaints" />
+      <Button layoutX="425.0" layoutY="137.0" onAction="#technicalSupportOnAction" text="Technical Support" />
+      <Button layoutX="59.0" layoutY="219.0" onAction="#interactionOnAction" text="Interaction" />
+      <Button layoutX="240.0" layoutY="219.0" onAction="#scheduleFollowupsOnAction" text="Schedule Followups" />
+      <Button layoutX="432.0" layoutY="219.0" onAction="#feedbackOnAction" text="Feedback" />
+      <Button layoutX="149.0" layoutY="303.0" onAction="#billingInquiriesOnAction" text="Billing Inquiries" />
+      <Button layoutX="341.0" layoutY="303.0" onAction="#accountsOnAction" text="Accounts" />
+      <Button layoutX="432.0" layoutY="373.0" onAction="#goBackOnAction" text="Go Back" />
+      <Label layoutX="154.0" layoutY="22.0" prefHeight="64.0" prefWidth="278.0" text="   Customer Support Representative Dashboard" />
+   </children>
+</AnchorPane>
