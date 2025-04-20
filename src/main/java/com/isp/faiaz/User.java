@@ -1,9 +1,15 @@
 package com.isp.faiaz;
 
+import java.io.Serializable;
+
 public class User extends Person{
 
     public User(String id, String userName, String password, int age) {
         super(id, userName, password, age);
+    }
+
+    public User() {
+        super();
     }
 
     @Override

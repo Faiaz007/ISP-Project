@@ -10,6 +10,14 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.FileChooser;
 
+import com.itextpdf.kernel.pdf.PdfDocument;
+import com.itextpdf.kernel.pdf.PdfWriter;
+import com.itextpdf.layout.Document;
+import com.itextpdf.layout.element.Paragraph;
+
+import java.io.*;
+
+
 import java.io.File;
 import java.io.IOException;
 import java.time.LocalDate;
@@ -60,7 +68,7 @@ public class DataUsageController
     }
 
     @javafx.fxml.FXML
-    public void handleExportPdf(ActionEvent actionEvent) {
+    public void handleExportPdf(ActionEvent actionEvent) throws IOException {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Save PDF");
         fileChooser.setInitialFileName("DataUsageReport.pdf");
@@ -71,6 +79,13 @@ public class DataUsageController
 
 
         System.out.println("PDF would be saved to: " + file.getAbsolutePath());
+
+        PdfWriter writer = new PdfWriter(file.getAbsolutePath());
+        PdfDocument pdf = new PdfDocument(writer);
+        Document document = new Document(pdf);
+        document.add(new Paragraph("Hello World!"));
+        document.close();
+
     }
 
 

@@ -1,6 +1,8 @@
 package com.isp.faiaz;
 
-public abstract class Person {
+import java.io.Serializable;
+
+public abstract class Person  implements Serializable {
     protected String id;
     protected String userName;
     protected String password;
@@ -12,6 +14,9 @@ public abstract class Person {
         this.password = password;
         this.age = age;
 
+    }
+
+    public Person() {
     }
 
     public String getId() {
