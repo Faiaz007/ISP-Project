@@ -26,7 +26,7 @@ public class CustomerNeedsController
 
     @javafx.fxml.FXML
     public void previousButtonOnAction(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("nusficur/marketingManagerDashboard.fxml");
+        SceneSwitcher.switchTo("musficur/marketingManagerDashboard.fxml");
     }
 
     @javafx.fxml.FXML
