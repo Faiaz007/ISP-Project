@@ -24,7 +24,8 @@ public class DashboardController
     }
 
     @javafx.fxml.FXML
-    public void handleSupportRep(ActionEvent actionEvent) {
+    public void handleSupportRep(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("fardeen/CustomerSupportRepresentativeGoals.fxml");
     }
 
     @javafx.fxml.FXML
