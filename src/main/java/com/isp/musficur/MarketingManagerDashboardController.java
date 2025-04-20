@@ -45,11 +45,11 @@ public class MarketingManagerDashboardController
 
     @javafx.fxml.FXML
     public void marketingReportButtonOnAction(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("marketingReport");
+        SceneSwitcher.switchTo("musficur/marketingReport.fxml");
     }
 
     @javafx.fxml.FXML
     public void campaignSuccessButtonOnAction(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("campaign.fxml");
+        SceneSwitcher.switchTo("musficur/campaign.fxml");
     }
 }

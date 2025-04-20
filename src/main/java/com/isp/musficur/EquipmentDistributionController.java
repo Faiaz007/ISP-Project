@@ -28,6 +28,6 @@ public class EquipmentDistributionController
 
     @javafx.fxml.FXML
     public void previousButtonOnAction(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("inventoryManagerDashboard.fxml");
+        SceneSwitcher.switchTo("musficur/inventoryManagerDashboard.fxml");
     }
 }

@@ -12,7 +12,8 @@ public class InventoryManagerDashboardController
     }
 
     @javafx.fxml.FXML
-    public void equipmentDistributionButtonOnAction(ActionEvent actionEvent) {
+    public void equipmentDistributionButtonOnAction(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("musficur/equipmentDistribution.fxml");
     }
 
     @javafx.fxml.FXML
@@ -24,12 +25,13 @@ public class InventoryManagerDashboardController
     }
 
     @javafx.fxml.FXML
-    public void orderEquipmentButtonOnAction(ActionEvent actionEvent) {
+    public void orderEquipmentButtonOnAction(ActionEvent actionEvent) throws IOException{
+        SceneSwitcher.switchTo("musficur/order.fxml");
     }
 
     @javafx.fxml.FXML
     public void logoutButtonOnAction(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("login-view.fxml");
+        SceneSwitcher.switchTo("faiaz/login-view.fxml");
     }
 
     @javafx.fxml.FXML
@@ -41,10 +43,12 @@ public class InventoryManagerDashboardController
     }
 
     @javafx.fxml.FXML
-    public void inventoryLevelButtonOnAction(ActionEvent actionEvent) {
+    public void inventoryLevelButtonOnAction(ActionEvent actionEvent) throws IOException{
+        SceneSwitcher.switchTo("musficur/trackInventory.fxml");
     }
 
     @javafx.fxml.FXML
-    public void inventoryRecordButtonOnAction(ActionEvent actionEvent) {
+    public void inventoryRecordButtonOnAction(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("musficur/inventoryRecords.fxml");
     }
 }
