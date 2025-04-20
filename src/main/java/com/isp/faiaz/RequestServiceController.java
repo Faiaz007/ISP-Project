@@ -84,7 +84,7 @@ public class RequestServiceController {
     @FXML
     public void handleBackButton(ActionEvent actionEvent) {
         try {
-            SceneSwitcher.switchTo("CustomerGoals.fxml");
+            SceneSwitcher.switchTo("faiaz/CustomerGoals.fxml");
         } catch (IOException e) {
             e.printStackTrace();
         }

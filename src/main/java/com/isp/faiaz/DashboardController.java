@@ -20,7 +20,7 @@ public class DashboardController
 
     @javafx.fxml.FXML
     public void handleInventory(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("inventoryManagerDashboard.fxml");
+        SceneSwitcher.switchTo("musficur/inventoryManagerDashboard.fxml");
     }
 
     @javafx.fxml.FXML
@@ -29,7 +29,7 @@ public class DashboardController
 
     @javafx.fxml.FXML
     public void handleMarketing(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("marketingManagerDashboard.fxml");
+        SceneSwitcher.switchTo("musficur/marketingManagerDashboard.fxml");
     }
 
     @javafx.fxml.FXML
@@ -38,12 +38,12 @@ public class DashboardController
 
     @javafx.fxml.FXML
     public void handleBillingManager(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("BillingManagerGoals.fxml");
+        SceneSwitcher.switchTo("faiaz/BillingManagerGoals.fxml");
     }
 
     @javafx.fxml.FXML
     public void handleCustomer(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("CustomerGoals.fxml");
+        SceneSwitcher.switchTo("faiaz/CustomerGoals.fxml");
 
 
     }
@@ -55,6 +55,6 @@ public class DashboardController
 
     @javafx.fxml.FXML
     public void handleLogOut(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("login-view.fxml");
+        SceneSwitcher.switchTo("faiaz/login-view.fxml");
     }
 }

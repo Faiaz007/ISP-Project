@@ -46,7 +46,7 @@ public class TrackPaymentsController
 
     @javafx.fxml.FXML
     public void handleBackButton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("BillingManagerGoals.fxml");
+        SceneSwitcher.switchTo("faiaz/BillingManagerGoals.fxml");
     }
 
     @javafx.fxml.FXML

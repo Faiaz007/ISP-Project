@@ -85,6 +85,6 @@ public class GenerateBillsController
 
     @javafx.fxml.FXML
     public void handlebackButton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("BillingManagerGoals.fxml");
+        SceneSwitcher.switchTo("faiaz/BillingManagerGoals.fxml");
     }
 }

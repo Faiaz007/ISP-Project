@@ -13,27 +13,27 @@ public class CustomerGoalsController
 
     @javafx.fxml.FXML
     public void handleDataUsage(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("DataUsage.fxml");
+        SceneSwitcher.switchTo("faiaz/DataUsage.fxml");
     }
 
     @javafx.fxml.FXML
     public void handleReportIssue(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("ReportIssue.fxml");
+        SceneSwitcher.switchTo("faiaz/ReportIssue.fxml");
     }
 
     @javafx.fxml.FXML
     public void handlePayBills(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("PayBills.fxml");
+        SceneSwitcher.switchTo("faiaz/PayBills.fxml");
     }
 
     @javafx.fxml.FXML
     public void handleRequestService(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("RequestService.fxml");
+        SceneSwitcher.switchTo("faiaz/RequestService.fxml");
 
     }
 
     @javafx.fxml.FXML
     public void handleBackButton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("Dashboard.fxml");
+        SceneSwitcher.switchTo("faiaz/Dashboard.fxml");
     }
 }

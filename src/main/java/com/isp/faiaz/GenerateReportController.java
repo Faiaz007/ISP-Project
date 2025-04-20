@@ -18,7 +18,7 @@ public class GenerateReportController
     @javafx.fxml.FXML
     public void handleBackButton(ActionEvent actionEvent) throws IOException {
         try {
-            SceneSwitcher.switchTo("BillingManagerGoals.fxml");
+            SceneSwitcher.switchTo("faiaz/BillingManagerGoals.fxml");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

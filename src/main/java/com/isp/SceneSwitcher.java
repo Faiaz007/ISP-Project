@@ -13,7 +13,7 @@ public class SceneSwitcher {
         stage = s ;
     }
     public static void switchTo(String fxmlFile) throws IOException {
-        Parent root = FXMLLoader.load(SceneSwitcher.class.getResource("/com/isp/faiaz/" + fxmlFile));
+        Parent root = FXMLLoader.load(SceneSwitcher.class.getResource("/com/isp/" + fxmlFile));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
@@ -21,7 +21,7 @@ public class SceneSwitcher {
 
 
     public static void switchToDashboard() throws IOException {
-        switchTo("Dashboard.fxml");
+        switchTo("faiaz/Dashboard.fxml");
     }
 
 

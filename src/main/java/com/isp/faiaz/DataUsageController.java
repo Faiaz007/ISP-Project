@@ -56,7 +56,7 @@ public class DataUsageController
 
     @javafx.fxml.FXML
     public void handleBackButton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("CustomerGoals.fxml");
+        SceneSwitcher.switchTo("faiaz/CustomerGoals.fxml");
     }
 
     @javafx.fxml.FXML

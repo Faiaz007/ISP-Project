@@ -13,26 +13,26 @@ public class BillingManagerGoalsController
 
     @javafx.fxml.FXML
     public void handleBackButton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("Dashboard.fxml");
+        SceneSwitcher.switchTo("faiaz/Dashboard.fxml");
     }
 
     @javafx.fxml.FXML
     public void openPaymentTrackerView(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("TrackPayments.fxml");
+        SceneSwitcher.switchTo("faiaz/TrackPayments.fxml");
     }
 
     @javafx.fxml.FXML
     public void openReportView(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("GenerateReport.fxml");
+        SceneSwitcher.switchTo("faiaz/GenerateReport.fxml");
     }
 
     @javafx.fxml.FXML
     public void openBillGeneratorView(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("GenerateBills.fxml");
+        SceneSwitcher.switchTo("faiazGenerateBills.fxml");
     }
 
     @javafx.fxml.FXML
     public void openReminderView(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("SendReminder.fxml");
+        SceneSwitcher.switchTo("faiaz/SendReminder.fxml");
     }
 }

@@ -76,6 +76,6 @@ public class SendReminderController {
 
     @FXML
     public void handleBackButton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("BillingManagerGoals.fxml");
+        SceneSwitcher.switchTo("faiaz/BillingManagerGoals.fxml");
     }
 }
