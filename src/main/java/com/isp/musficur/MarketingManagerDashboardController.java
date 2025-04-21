@@ -52,4 +52,9 @@ public class MarketingManagerDashboardController
     public void campaignSuccessButtonOnAction(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchTo("musficur/campaign.fxml");
     }
+
+    @javafx.fxml.FXML
+    public void previousButtonOnAction(ActionEvent actionEvent) throws IOException{
+        SceneSwitcher.switchTo("faiaz/Dashboard.fxml");
+    }
 }

@@ -6,14 +6,16 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="330.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isp.fardeen.Accounts">
+<AnchorPane prefHeight="447.0" prefWidth="574.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isp.fardeen.Accounts">
     <Label layoutX="20" layoutY="20" text="Customer Accounts" />
     <TableView fx:id="accountTableView" layoutX="20" layoutY="60" prefHeight="200" prefWidth="500">
         <columns>
             <TableColumn fx:id="accountIdTableColumn" text="Account ID" />
             <TableColumn fx:id="customerTableColumn" text="Customer" />
-            <TableColumn fx:id="planTableColumn" text="Plan" />
+            <TableColumn fx:id="planTableColumn" prefWidth="140.00001525878906" text="Contact Information" />
+         <TableColumn prefWidth="200.0" text="Plan" />
         </columns>
     </TableView>
     <Button layoutX="20" layoutY="280" onAction="#updateAccountOnAction" text="Update Account" />
+   <Button layoutX="401.0" layoutY="349.0" mnemonicParsing="false" onAction="#goBackOnAction" text="Go Back" />
 </AnchorPane>

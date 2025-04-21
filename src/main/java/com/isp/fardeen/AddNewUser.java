@@ -2,10 +2,13 @@ package com.isp.fardeen;
 
 
 
+import com.isp.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+
+import java.io.IOException;
 
 public class AddNewUser
 {
@@ -25,4 +28,10 @@ public class AddNewUser
     @javafx.fxml.FXML
     public void addUserOnAction(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void goBackOnAction(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("fardeen/SystemAdminGoals.fxml");
+    }
+
 }

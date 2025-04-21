@@ -29,6 +29,25 @@ public class InventoryRecordsController
 
     @javafx.fxml.FXML
     public void updateInventoryButtonOnAction(ActionEvent actionEvent) {
+        if (idTextField.getText().trim().isEmpty()){
+            inventoryRecordOutputLabel.setText(("Enter a  ID to Continue"));
+            return;
+        }
+        if (typeTextField.getText().trim().isEmpty()) {
+            inventoryRecordOutputLabel.setText(("Enter type to Continue"));
+            return;
+        }
+        if (modelTextField.getText().trim().isEmpty()) {
+            inventoryRecordOutputLabel.setText(("Enter any model to Continue"));
+            return;
+        }
+        if (quantityTextField.getText().trim().isEmpty()) {
+            inventoryRecordOutputLabel.setText(("Enter quantity to Continue"));
+            return;
+        }
+
+
+        inventoryRecordOutputLabel.setText("Inventory record Successful");
     }
 
     @javafx.fxml.FXML

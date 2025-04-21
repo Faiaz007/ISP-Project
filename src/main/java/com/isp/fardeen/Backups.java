@@ -1,8 +1,11 @@
 package com.isp.fardeen;
 
+import com.isp.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
+
+import java.io.IOException;
 
 public class Backups
 {
@@ -21,5 +24,10 @@ public class Backups
 
     @javafx.fxml.FXML
     public void scheduleBackupOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void goBackOnAction(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("fardeen/SystemAdminGoals.fxml");
     }
 }

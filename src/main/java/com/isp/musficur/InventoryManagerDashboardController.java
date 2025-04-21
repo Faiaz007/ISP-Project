@@ -51,4 +51,9 @@ public class InventoryManagerDashboardController
     public void inventoryRecordButtonOnAction(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchTo("musficur/inventoryRecords.fxml");
     }
+
+    @javafx.fxml.FXML
+    public void previousButtonOnAction(ActionEvent actionEvent) throws  IOException {
+        SceneSwitcher.switchTo("faiaz/Dashboard.fxml");
+    }
 }

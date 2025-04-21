@@ -5,12 +5,13 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="462.0" prefWidth="470.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.isp.fardeen.Backups">
+<AnchorPane prefHeight="462.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isp.fardeen.Backups">
     <children>
         <Label layoutX="160.0" layoutY="14.0" text="Backup Management" />
         <DatePicker fx:id="backupSchedulerDatePicker" layoutX="14" layoutY="50" />
         <Button layoutX="14" layoutY="90" onAction="#scheduleBackupOnAction" text="Schedule Backup" />
         <Button layoutX="14" layoutY="130" onAction="#manualBackupOnAction" text="Manual Backup" />
         <Label fx:id="backupConfirmationLabel" layoutX="14" layoutY="170" />
+      <Button layoutX="317.0" layoutY="249.0" mnemonicParsing="false" onAction="#goBackOnAction" text="Go Back" />
     </children>
 </AnchorPane>

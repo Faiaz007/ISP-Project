@@ -13,7 +13,7 @@ public class CustomerSupportRepresentativeGoalsController
 
     @javafx.fxml.FXML
     public void billingInquiriesOnAction(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("fardeen/Billingquiries.fxml");
+        SceneSwitcher.switchTo("fardeen/Billinginquiries.fxml");
     }
 
     @javafx.fxml.FXML
@@ -23,7 +23,7 @@ public class CustomerSupportRepresentativeGoalsController
 
     @javafx.fxml.FXML
     public void goBackOnAction(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("faiaz/Dashboard");
+        SceneSwitcher.switchTo("faiaz/Dashboard.fxml");
     }
 
     @javafx.fxml.FXML
@@ -38,21 +38,21 @@ public class CustomerSupportRepresentativeGoalsController
 
     @javafx.fxml.FXML
     public void complaintsOnAction(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("farden/Complaints.fxml");
+        SceneSwitcher.switchTo("fardeen/Complaints.fxml");
     }
 
     @javafx.fxml.FXML
     public void interactionOnAction(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("farden/Interactions.fxml");
+        SceneSwitcher.switchTo("fardeen/Interactions.fxml");
     }
 
     @javafx.fxml.FXML
     public void feedbackOnAction(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("farden/Feedback.fxml");
+        SceneSwitcher.switchTo("fardeen/Feedback.fxml");
     }
 
     @javafx.fxml.FXML
     public void technicalSupportOnAction(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("farden/TechnicalSupport.fxml");
+        SceneSwitcher.switchTo("fardeen/TechnicalSupport.fxml");
     }
 }
