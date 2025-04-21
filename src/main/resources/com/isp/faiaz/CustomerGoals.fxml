@@ -4,9 +4,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isp.faiaz.CustomerGoalsController">
-    <Button layoutX="46.0" layoutY="30.0" onAction="#handleRequestService" prefHeight="79.0" prefWidth="117.0" text="Request New Service" />
-   <Button layoutX="476.0" layoutY="328.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="45.0" prefWidth="82.0" text="Go Back" />
+    <Button layoutX="41.0" layoutY="35.0" onAction="#handleRequestService" prefHeight="79.0" prefWidth="127.0" text="Request New Service" />
+   <Button layoutX="507.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="43.0" prefWidth="69.0" text="Go Back" />
     <Button layoutX="230.0" layoutY="34.0" onAction="#handlePayBills" prefHeight="79.0" prefWidth="127.0" text="Pay Bills" />
     <Button layoutX="422.0" layoutY="31.0" onAction="#handleDataUsage" prefHeight="86.0" prefWidth="127.0" text="Check Data Usage" />
     <Button layoutX="46.0" layoutY="167.0" onAction="#handleReportIssue" prefHeight="79.0" prefWidth="117.0" text="Report Issue" />
+   <Button layoutX="242.0" layoutY="161.0" onAction="#handleChangePlan" prefHeight="79.0" prefWidth="117.0" text="Change Plan" />
+   <Button layoutX="422.0" layoutY="167.0" onAction="#handleSuspension" prefHeight="79.0" prefWidth="117.0" text="Connection &#10;Suspension" />
+   <Button layoutX="46.0" layoutY="282.0" onAction="#handleTrackRequest" prefHeight="79.0" prefWidth="117.0" text="Track Request&#10;" />
+   <Button layoutX="246.0" layoutY="282.0" onAction="#handleCustomerSupport" prefHeight="79.0" prefWidth="127.0" text="Customer &#10;Care &#10;Support&#10;&#10;" />
 </AnchorPane>

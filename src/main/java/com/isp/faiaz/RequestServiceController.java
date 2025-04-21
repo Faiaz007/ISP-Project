@@ -68,7 +68,7 @@ public class RequestServiceController {
 
         confirmationMessage.setText("Payment successful! Your " + selectedPlan + " plan is now active.");
         confirmationMessage.setTextFill(Color.GREEN);
-        try (FileWriter fileWriter = new FileWriter("service_requests.txt", true)) {
+        try (FileWriter fileWriter = new FileWriter("data/service_requests.txt", true)) {
             fileWriter.write("Plan: " + selectedPlan + "\n");
             fileWriter.write("Payment Method: " + selectedMethod + "\n");
             fileWriter.write("Status: Confirmed\n");

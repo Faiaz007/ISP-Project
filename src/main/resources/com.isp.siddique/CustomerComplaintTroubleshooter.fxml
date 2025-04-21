@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="443.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isp.siddique.CustomerComplaintTroubleshooter">
+    <Label layoutX="118.0" layoutY="53.0" prefHeight="35.0" prefWidth="398.0" text="Customer Complaint Troubleshooter">
+        <font>
+          <Font size="24.0" />
+        </font>
+    </Label>
+    <TextArea layoutX="317.0" layoutY="157.0" prefHeight="182.0" prefWidth="170.0" />
+    <TextArea layoutX="87.0" layoutY="157.0" prefHeight="182.0" prefWidth="170.0" />
+    <Button layoutX="230.0" layoutY="372.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="Resolve">
+        <font>
+          <Font size="14.0" />
+        </font>
+    </Button>
+    <Label layoutX="118.0" layoutY="125.0" prefHeight="18.0" prefWidth="90.0" text="Complaint list">
+        <font>
+          <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="342.0" layoutY="125.0" prefHeight="20.0" prefWidth="120.0" text="Complaint Details">
+        <font>
+          <Font size="14.0" />
+        </font>
+    </Label>
+   <Button layoutX="506.0" layoutY="389.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="82.0" text="Previous" />
+</AnchorPane>

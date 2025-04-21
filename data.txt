@@ -14,3 +14,9 @@ Description: ffffg
 Issue Type: Billing Problem
 Description: facing issues
 --------------------------------------------------
+Issue Type: Slow Speed
+Description: very slow
+--------------------------------------------------
+Issue Type: Slow Speed
+Description: very slow
+--------------------------------------------------

@@ -78,13 +78,34 @@ public class DataUsageController
         if (file == null) return;
 
 
-        System.out.println("PDF would be saved to: " + file.getAbsolutePath());
-
         PdfWriter writer = new PdfWriter(file.getAbsolutePath());
         PdfDocument pdf = new PdfDocument(writer);
         Document document = new Document(pdf);
-        document.add(new Paragraph("Hello World!"));
+        document.add(new Paragraph("Data Usage Report"));
+        com.itextpdf.layout.element.Table table = new com.itextpdf.layout.element.Table(5);
+        table.addHeaderCell("User ID");
+        table.addHeaderCell("Plan Name");
+        table.addHeaderCell("Date");
+        table.addHeaderCell("Data Used");
+        table.addHeaderCell("Time Slot");
+
+        for (DataUsage dataUsage : dataUsageTableView.getItems()) {
+            table.addCell(dataUsage.getDataUsageId());
+            table.addCell(dataUsage.getPlanName());
+            table.addCell(dataUsage.getDate().toString());
+            table.addCell(String.valueOf(dataUsage.getDataUsed()));
+            table.addCell(dataUsage.getTimeSlot());
+
+        }
+        document.add(table);
         document.close();
+
+
+        System.out.println("PDF would be saved to: " + file.getAbsolutePath());
+
+
+
+
 
     }
 

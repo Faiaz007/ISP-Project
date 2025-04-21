@@ -36,4 +36,24 @@ public class CustomerGoalsController
     public void handleBackButton(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchTo("faiaz/Dashboard.fxml");
     }
+
+    @javafx.fxml.FXML
+    public void handleTrackRequest(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("faiaz/TrackRequest.fxml");
+    }
+
+    @javafx.fxml.FXML
+    public void handleSuspension(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("faiaz/ConnectionSuspension.fxml");
+    }
+
+    @javafx.fxml.FXML
+    public void handleCustomerSupport(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("faiaz/CustomerCare.fxml");
+    }
+
+    @javafx.fxml.FXML
+    public void handleChangePlan(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("faiaz/ChangePlan.fxml");
+    }
 }

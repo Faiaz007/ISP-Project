@@ -13,6 +13,8 @@ import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.io.*;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TrackPaymentsController
 {
@@ -33,7 +35,7 @@ public class TrackPaymentsController
     private Label messageLabel;
     @javafx.fxml.FXML
     private TextField searchField;
-
+    private static final String FILE_PATH = "data/payments.bin";
     @javafx.fxml.FXML
     public void initialize() {
         paymentIdColumn.setCellValueFactory(new PropertyValueFactory<>("paymentId"));
@@ -42,6 +44,7 @@ public class TrackPaymentsController
         dateColumn.setCellValueFactory(new PropertyValueFactory<>("paymentDate"));
         statusColumn.setCellValueFactory(cell -> new ReadOnlyStringWrapper(
                 cell.getValue().isRefunded() ? "Refunded" : "Completed"));
+        paymentTable.setItems(payments);
     }
 
     @javafx.fxml.FXML
@@ -51,50 +54,51 @@ public class TrackPaymentsController
 
     @javafx.fxml.FXML
     public void loadFromFile(ActionEvent actionEvent) {
-        payments.clear();
-        try (ObjectInputStream in = new ObjectInputStream(new FileInputStream("payments.bin"))) {
-            while (true) {
-                Payment p = (Payment) in.readObject();
-                payments.add(p);
-            }
-        } catch (EOFException e) {
+        File file = new File(FILE_PATH);
+        if (!file.exists()) {
+            messageLabel.setText("No payments to load.");
+            return;
+        }
+        try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(FILE_PATH))) {
+            List<Payment> loaded = (List<Payment>) in.readObject();
+            payments.setAll(loaded);
+            paymentTable.setItems(payments);
             messageLabel.setText("Payments loaded successfully.");
         } catch (IOException | ClassNotFoundException e) {
+            messageLabel.setText("Failed to load payments.");
             e.printStackTrace();
-            messageLabel.setText("Error loading payments.");
         }
     }
 
     @javafx.fxml.FXML
     public void saveToFile(ActionEvent actionEvent) {
-        try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("payments.bin"))) {
-            for (Payment p : payments) {
-                out.writeObject(p);
-            }
-            messageLabel.setText("Payments saved to file.");
+        File dir = new File("data");
+        if (!dir.exists()) dir.mkdirs();
+
+        try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(FILE_PATH))) {
+            out.writeObject(new ArrayList<>(payments));
+            messageLabel.setText("Payments saved successfully.");
         } catch (IOException e) {
+            messageLabel.setText("Failed to save payments.");
             e.printStackTrace();
-            messageLabel.setText("Error saving payments.");
         }
     }
 
     @javafx.fxml.FXML
     public void filterPayments(ActionEvent actionEvent) {
-        try {
-        messageLabel.setText("");
-        String query = searchField.getText().toLowerCase();
+        String query = searchField.getText().trim();
         if (query.isEmpty()) {
             paymentTable.setItems(payments);
+            messageLabel.setText("No filter applied.");
             return;
         }
         ObservableList<Payment> filtered = FXCollections.observableArrayList();
-        for (Payment p : payments) {
-            if (p.getCustomerId().toLowerCase().contains(query)) {
+        for(Payment p : payments){
+            if(p.getPaymentId().toLowerCase().contains(query)|| p.getCustomerId().toLowerCase().contains(query)||(p.isRefunded() ? "refund":"completed").contains(query.toLowerCase())){
                 filtered.add(p);
             }
         }
         paymentTable.setItems(filtered);
-    } catch (Exception e) {
-        messageLabel.setText("Invalid input for filter!");}
-    }
+        messageLabel.setText(filtered.isEmpty() ? "No results found." : "Found " + filtered.size() + " results.");
+        }
 }
