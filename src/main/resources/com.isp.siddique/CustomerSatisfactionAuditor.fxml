@@ -13,9 +13,9 @@
           <Font size="24.0" />
         </font>
     </Label>
-    <TextField layoutX="226.0" layoutY="107.0" prefHeight="26.0" prefWidth="237.0" />
-    <TextField layoutX="225.0" layoutY="157.0" prefHeight="26.0" prefWidth="238.0" />
-    <TextField layoutX="225.0" layoutY="212.0" prefHeight="78.0" prefWidth="238.0" />
+    <TextField fx:id="surveyResultsTextField" layoutX="226.0" layoutY="107.0" prefHeight="26.0" prefWidth="237.0" />
+    <TextField fx:id="overallRatingTextField" layoutX="225.0" layoutY="157.0" prefHeight="26.0" prefWidth="238.0" />
+    <TextField fx:id="notesTextArea" layoutX="225.0" layoutY="212.0" prefHeight="78.0" prefWidth="238.0" />
     <Label layoutX="90.0" layoutY="110.0" prefHeight="20.0" prefWidth="106.0" text="Survey Results :">
         <font>
           <Font size="14.0" />
@@ -31,10 +31,10 @@
           <Font size="14.0" />
         </font>
     </Label>
-    <Button layoutX="243.0" layoutY="320.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="141.0" text="Generate Report">
+    <Button fx:id="generateReportButton" layoutX="243.0" layoutY="320.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="141.0" text="Generate Report">
         <font>
           <Font size="14.0" />
         </font>
     </Button>
-   <Button layoutX="41.0" layoutY="350.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="82.0" text="Previous" />
+   <Button fx:id="previousButton" layoutX="41.0" layoutY="350.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="82.0" text="Previous" />
 </AnchorPane>

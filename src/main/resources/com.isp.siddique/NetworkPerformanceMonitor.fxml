@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isp.siddique.NetworkPerformanceMonitor">
-    <CheckBox layoutX="90.0" layoutY="102.0" mnemonicParsing="false" text="Enable Monitoring" />
+    <CheckBox fx:id="enableMonitoringCheckBox" layoutX="90.0" layoutY="102.0" mnemonicParsing="false" text="Enable Monitoring" />
     <Label layoutX="106.0" layoutY="30.0" prefHeight="46.0" prefWidth="387.0" text="     Monitor Network Performance">
         <font>
           <Font size="24.0" />
@@ -29,11 +29,11 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
         <Label prefHeight="26.0" prefWidth="50.0" text="Latency :" />
-        <TextField prefHeight="26.0" prefWidth="163.0" GridPane.columnIndex="1" />
+        <TextField fx:id="latencyField" prefHeight="26.0" prefWidth="163.0" GridPane.columnIndex="1" />
         <Label prefHeight="31.0" prefWidth="66.0" text="Packet loss :" GridPane.rowIndex="1" />
         <Label prefHeight="33.0" prefWidth="70.0" text="Throughput:" GridPane.rowIndex="2" />
-        <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
-        <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <TextField fx:id="packetLossField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <TextField fx:id="throughputField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
     </GridPane>
     <ImageView fitHeight="26.0" fitWidth="55.0" layoutX="392.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true" />
     <Label layoutX="89.0" layoutY="132.0" prefHeight="18.0" prefWidth="121.0" text="Statistics">
@@ -46,6 +46,6 @@
           <Font size="18.0" />
         </font>
     </Label>
-    <Button layoutX="364.0" layoutY="175.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="131.0" text="Start Monitoring" />
-   <Button layoutX="54.0" layoutY="347.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="97.0" text="Previous" />
+    <Button fx:id="startMonitoringButton" layoutX="364.0" layoutY="175.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="131.0" text="Start Monitoring" />
+   <Button fx:id="Previous-button" layoutX="54.0" layoutY="347.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="97.0" text="Previous" />
 </AnchorPane>

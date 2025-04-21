@@ -5,23 +5,24 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isp.faiaz.RequestServiceController">
-    <children>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isp.faiaz.RequestServiceController">
+    <Label layoutX="18.0" layoutY="14.0" style="-fx-font-size: 18px; -fx-font-weight: bold;"
+           text="Request a New Service"/>
 
 
-        <Label layoutX="18.0" layoutY="14.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Request a New Service" />
-
-
-        <Label layoutX="20" layoutY="60" text="Choose Plan:" />
-        <ComboBox fx:id="planType" layoutX="150" layoutY="55" prefWidth="200" promptText="Select a plan" />
-        <Button layoutX="431.0" layoutY="55.0" onAction="#checkAvailability" prefHeight="33.0" prefWidth="109.0" text="Check Availability" />
-        <Label fx:id="availabilityLabel" layoutX="150" layoutY="90" style="-fx-font-style: italic;" textFill="blue" />
-        <Label layoutX="20" layoutY="140" text="Payment Method:" />
-        <ComboBox fx:id="paymentMethod" layoutX="150" layoutY="135" prefWidth="200" promptText="Select method" />
-        <Button layoutX="44.0" layoutY="197.0" onAction="#confirmPayment" prefHeight="81.0" prefWidth="140" text="Confirm and Pay" />
-        <Label fx:id="confirmationMessage" layoutX="67.0" layoutY="319.0" prefHeight="46.0" prefWidth="200.0" style="-fx-font-style: italic;" textFill="green" />
-        <Button layoutX="465.0" layoutY="290.0" onAction="#handleBackButton" prefHeight="90.0" prefWidth="94.0" text="Go Back" />
-
-    </children>
+    <Label layoutX="20" layoutY="60" text="Choose Plan:"/>
+    <ComboBox fx:id="planType" layoutX="150" layoutY="55" prefWidth="200" promptText="Select a plan"/>
+    <Button layoutX="431.0" layoutY="55.0" onAction="#checkAvailability" prefHeight="33.0" prefWidth="109.0"
+            text="Check Availability"/>
+    <Label fx:id="availabilityLabel" layoutX="150" layoutY="90" style="-fx-font-style: italic;" textFill="blue"/>
+    <Label layoutX="20" layoutY="140" text="Payment Method:"/>
+    <ComboBox fx:id="paymentMethod" layoutX="150" layoutY="135" prefWidth="200" promptText="Select method"/>
+    <Button layoutX="44.0" layoutY="197.0" onAction="#confirmPayment" prefHeight="81.0" prefWidth="140"
+            text="Confirm and Pay"/>
+    <Label fx:id="confirmationMessage" layoutX="67.0" layoutY="319.0" prefHeight="46.0" prefWidth="200.0"
+           style="-fx-font-style: italic;" textFill="green"/>
+    <Button layoutX="465.0" layoutY="290.0" onAction="#handleBackButton" prefHeight="90.0" prefWidth="94.0"
+            text="Go Back"/>
 
 </AnchorPane>

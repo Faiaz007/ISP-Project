@@ -12,9 +12,9 @@
           <Font size="24.0" />
         </font>
     </Label>
-    <TextArea layoutX="317.0" layoutY="157.0" prefHeight="182.0" prefWidth="170.0" />
-    <TextArea layoutX="87.0" layoutY="157.0" prefHeight="182.0" prefWidth="170.0" />
-    <Button layoutX="230.0" layoutY="372.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="Resolve">
+    <TextArea fx:id="complaintDetails" layoutX="317.0" layoutY="157.0" prefHeight="182.0" prefWidth="170.0" />
+    <TextArea fx:id="complaintListView" layoutX="87.0" layoutY="157.0" prefHeight="182.0" prefWidth="170.0" />
+    <Button fx:id="resolveButton" layoutX="230.0" layoutY="372.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="Resolve">
         <font>
           <Font size="14.0" />
         </font>
@@ -29,5 +29,5 @@
           <Font size="14.0" />
         </font>
     </Label>
-   <Button layoutX="506.0" layoutY="389.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="82.0" text="Previous" />
+   <Button fx:id="previousButton" layoutX="506.0" layoutY="389.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="82.0" text="Previous" />
 </AnchorPane>

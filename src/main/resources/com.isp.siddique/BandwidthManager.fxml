@@ -8,12 +8,13 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isp.siddique.BandwidthManager">
+
     <Label layoutX="135.0" layoutY="52.0" prefHeight="35.0" prefWidth="354.0" text="Manage Bandwidth Allocation">
         <font>
           <Font size="24.0" />
         </font>
     </Label>
-    <Slider layoutX="135.0" layoutY="155.0" prefHeight="14.0" prefWidth="390.0" />
+    <Slider fx:id="totalBandwidthSlider" layoutX="135.0" layoutY="155.0" prefHeight="14.0" prefWidth="390.0" />
     <Label layoutX="135.0" layoutY="173.0" text="0" />
     <Label layoutX="498.0" layoutY="173.0" text="1024" />
     <Label layoutX="135.0" layoutY="118.0" text="Total Bandwidth (Mbps)">
@@ -21,9 +22,9 @@
           <Font size="15.0" />
         </font>
     </Label>
-    <TextField layoutX="135.0" layoutY="213.0" prefHeight="26.0" prefWidth="214.0" />
-    <TextField layoutX="135.0" layoutY="259.0" prefHeight="26.0" prefWidth="214.0" />
-    <Button layoutX="248.0" layoutY="313.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="128.0" text="Apply Changes">
+    <TextField fx:id="downloadField" layoutX="135.0" layoutY="213.0" prefHeight="26.0" prefWidth="214.0" />
+    <TextField fx:id="uploadField" layoutX="135.0" layoutY="259.0" prefHeight="26.0" prefWidth="214.0" />
+    <Button fx:id="applyChangesButton" layoutX="248.0" layoutY="313.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="128.0" text="Apply Changes">
         <font>
           <Font size="14.0" />
         </font>
@@ -38,5 +39,5 @@
           <Font size="14.0" />
         </font>
     </Label>
-   <Button layoutX="45.0" layoutY="354.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="86.0" text="Previous" />
+   <Button fx:id="previousButton" layoutX="45.0" layoutY="354.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="86.0" text="Previous" />
 </AnchorPane>

@@ -12,9 +12,9 @@
          <Font size="24.0" />
       </font>
    </Label>
-   <TextField layoutX="216.0" layoutY="145.0" prefHeight="26.0" prefWidth="238.0" />
-   <TextField layoutX="216.0" layoutY="200.0" prefHeight="26.0" prefWidth="238.0" />
-   <TextField layoutX="216.0" layoutY="257.0" prefHeight="26.0" prefWidth="238.0" />
+   <TextField fx:id="ipField" layoutX="216.0" layoutY="145.0" prefHeight="26.0" prefWidth="238.0" />
+   <TextField fx:id="macField" layoutX="216.0" layoutY="200.0" prefHeight="26.0" prefWidth="238.0" />
+   <TextField fx:id="planField" layoutX="216.0" layoutY="257.0" prefHeight="26.0" prefWidth="238.0" />
    <Label layoutX="120.0" layoutY="148.0" prefHeight="18.0" prefWidth="71.0" text="IP Address">
       <font>
          <Font size="14.0" />
@@ -30,7 +30,7 @@
          <Font size="14.0" />
       </font>
    </Label>
-   <Button layoutX="246.0" layoutY="307.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="107.0" text="Submit" />
-   <Button layoutX="47.0" layoutY="348.0" mnemonicParsing="false" text="Previous" />
-   <Button layoutX="495.0" layoutY="348.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="71.0" text="Log Out" />
+   <Button fx:id="submitButton" layoutX="246.0" layoutY="307.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="107.0" text="Submit" />
+   <Button fx:id="previousButton" layoutX="47.0" layoutY="348.0" mnemonicParsing="false" text="Previous" />
+   <Button fx:id="logoutButton" layoutX="495.0" layoutY="348.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="71.0" text="Log Out" />
 </AnchorPane>
