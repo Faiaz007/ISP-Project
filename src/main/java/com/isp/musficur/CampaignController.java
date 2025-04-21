@@ -25,6 +25,7 @@ public class CampaignController
 
     @javafx.fxml.FXML
     public void createReportButtonOnAction(ActionEvent actionEvent) {
+
     }
 
     @javafx.fxml.FXML
