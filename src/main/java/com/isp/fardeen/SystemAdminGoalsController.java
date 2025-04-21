@@ -23,7 +23,7 @@ public class SystemAdminGoalsController
 
     @javafx.fxml.FXML
     public void goBackOnAction(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("faiaz/Dashboard");
+        SceneSwitcher.switchTo("faiaz/Dashboard.fxml");
     }
 
     @javafx.fxml.FXML

@@ -32,6 +32,7 @@ public class Reports
     }
 
     @javafx.fxml.FXML
-    public void goBackOnAction(ActionEvent actionEvent) {
+    public void goBackOnAction(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("fardeen/SystemAdminGoals.fxml");
     }
 }

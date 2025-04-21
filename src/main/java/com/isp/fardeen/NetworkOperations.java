@@ -1,9 +1,12 @@
 package com.isp.fardeen;
 
+import com.isp.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+
+import java.io.IOException;
 
 public class NetworkOperations
 {
@@ -25,6 +28,7 @@ public class NetworkOperations
     }
 
     @javafx.fxml.FXML
-    public void goBackOnAction(ActionEvent actionEvent) {
+    public void goBackOnAction(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("fardeen/SystemAdminGoals.fxml");
     }
 }
