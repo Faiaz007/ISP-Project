@@ -22,5 +22,6 @@
       <Button layoutX="428.0" layoutY="277.0" mnemonicParsing="false" onAction="#colaborationButtonOnAction" prefHeight="82.0" prefWidth="192.0" text="Colab With Sales Team" />
       <Button layoutX="632.0" layoutY="277.0" mnemonicParsing="false" onAction="#marketingPreferencesButtonOnAction" prefHeight="82.0" prefWidth="192.0" text="Investigate Market Preferences" />
       <Button layoutX="744.0" layoutY="428.0" mnemonicParsing="false" onAction="#logoutButtonOnAction" prefHeight="36.0" prefWidth="80.0" text="Logout" />
+      <Button layoutX="14.0" layoutY="434.0" mnemonicParsing="false" onAction="#previousButtonOnAction" text="Previous" />
    </children>
 </AnchorPane>

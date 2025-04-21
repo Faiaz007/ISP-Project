@@ -36,9 +36,48 @@ public class CustomerNeedsController
 
     @javafx.fxml.FXML
     public void getDataButtonOnAction(ActionEvent actionEvent) {
+        if (idTextField.getText().trim().isEmpty()){
+            preferancesOutputLabel.setText(("Enter a  ID to Continue"));
+            return;
+        }
+        if (emailTextField.getText().trim().isEmpty()) {
+            preferancesOutputLabel.setText(("Enter a email to Continue"));
+            return;
+        }
+        if (preferancesTextField.getText().trim().isEmpty()) {
+            preferancesOutputLabel.setText(("Enter any preferences to Continue"));
+            return;
+        }
+        if (timePeriodTextField.getText().trim().isEmpty()) {
+            preferancesOutputLabel.setText(("Enter a time limit to Continue"));
+            return;
+        }
+
+
+        preferancesOutputLabel.setText("Success");
     }
+
 
     @javafx.fxml.FXML
     public void generateButtonOnAction(ActionEvent actionEvent) {
+        if (idTextField.getText().trim().isEmpty()){
+            preferancesOutputLabel.setText(("Enter a  ID to Continue"));
+            return;
+        }
+        if (emailTextField.getText().trim().isEmpty()) {
+            preferancesOutputLabel.setText(("Enter a email to Continue"));
+            return;
+        }
+        if (preferancesTextField.getText().trim().isEmpty()) {
+            preferancesOutputLabel.setText(("Enter any preferences to Continue"));
+            return;
+        }
+        if (timePeriodTextField.getText().trim().isEmpty()) {
+            preferancesOutputLabel.setText(("Enter a time limit to Continue"));
+            return;
+        }
+
+
+        preferancesOutputLabel.setText("Successfully generated");
     }
 }

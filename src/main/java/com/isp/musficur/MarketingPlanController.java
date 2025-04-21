@@ -27,6 +27,25 @@ public class MarketingPlanController
 
     @javafx.fxml.FXML
     public void launchButtonOnAction(ActionEvent actionEvent) {
+        if (budgetTextField.getText().trim().isEmpty()){
+            marketingPlanOutputLabel.setText(("Enter a Budget to Continue"));
+            return;
+        }
+        if (audienceTextField.getText().trim().isEmpty()) {
+            marketingPlanOutputLabel.setText(("Enter targeted audience info to Continue"));
+            return;
+        }
+        if (timelineTextField.getText().trim().isEmpty()) {
+            marketingPlanOutputLabel.setText(("Enter any timeline to Continue"));
+            return;
+        }
+        if (objectiveTextField.getText().trim().isEmpty()) {
+            marketingPlanOutputLabel.setText(("Enter a objective to Continue"));
+            return;
+        }
+
+
+        marketingPlanOutputLabel.setText("Success");
     }
 
     @javafx.fxml.FXML

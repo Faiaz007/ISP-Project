@@ -25,6 +25,11 @@ public class CampaignController
 
     @javafx.fxml.FXML
     public void createReportButtonOnAction(ActionEvent actionEvent) {
+        if (idTextField.getText().trim().isEmpty()){
+            campaignOutputLabel.setText(("Enter a Campaign ID to Continue"));
+            return;
+        }
+        campaignOutputLabel.setText("Success");
 
     }
 
@@ -35,5 +40,10 @@ public class CampaignController
 
     @javafx.fxml.FXML
     public void getDataButtonOnAction(ActionEvent actionEvent) {
+        if (idTextField.getText().trim().isEmpty()){
+            campaignOutputLabel.setText(("Enter a Campaign ID to Continue"));
+            return;
+        }
+        campaignOutputLabel.setText("Data extract Successful");
     }
 }

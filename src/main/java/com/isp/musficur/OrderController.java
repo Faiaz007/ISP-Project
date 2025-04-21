@@ -24,6 +24,20 @@ public class OrderController
 
     @javafx.fxml.FXML
     public void placeOrderButtonOnAction(ActionEvent actionEvent) {
+        if (idTextField.getText().trim().isEmpty()){
+            orderOutputLabel.setText(("Enter a  ID to Continue"));
+            return;
+        }
+        if (supplierTextField.getText().trim().isEmpty()) {
+            orderOutputLabel.setText(("Enter supplier data to Continue"));
+            return;
+        }
+        if (equipmentDetailsTextField.getText().trim().isEmpty()) {
+            orderOutputLabel.setText(("Enter equipment details to Continue"));
+            return;
+        }
+
+        orderOutputLabel.setText("Order placed Successful");
     }
 
     @javafx.fxml.FXML
