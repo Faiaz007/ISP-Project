@@ -22,5 +22,6 @@
       <Button layoutX="424.0" layoutY="244.0" mnemonicParsing="false" onAction="#notifyTechnicianButtonOnAction" prefHeight="82.0" prefWidth="209.0" text="Notify Technicians about Equipment" />
       <Button layoutX="640.0" layoutY="244.0" mnemonicParsing="false" onAction="#equipmentReturnButtonOnAction" prefHeight="82.0" prefWidth="176.0" text="Handle Equipment Return" />
       <Button layoutX="736.0" layoutY="389.0" mnemonicParsing="false" onAction="#logoutButtonOnAction" prefHeight="36.0" prefWidth="80.0" text="Logout" />
+      <Button layoutX="22.0" layoutY="395.0" mnemonicParsing="false" onAction="#previousButtonOnAction" text="Previous" />
    </children>
 </AnchorPane>
