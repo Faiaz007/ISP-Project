@@ -24,7 +24,7 @@ public class TrackInventoryController
 
     @javafx.fxml.FXML
     public void previousButtonOnAction(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("inventoryManagerDashboard.fxml");
+        SceneSwitcher.switchTo("musficur/inventoryManagerDashboard.fxml");
     }
 
     @javafx.fxml.FXML
@@ -33,7 +33,7 @@ public class TrackInventoryController
 
     @javafx.fxml.FXML
     public void logOutButtonOnAction(ActionEvent actionEvent) throws IOException{
-        SceneSwitcher.switchTo("login-view.fxml");
+        SceneSwitcher.switchTo("faiaz/login-view.fxml");
     }
 
     @javafx.fxml.FXML

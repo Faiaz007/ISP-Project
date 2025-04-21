@@ -20,7 +20,7 @@ public class CampaignController
 
     @javafx.fxml.FXML
     public void previousButtonOnAction(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("marketingManagerDashboard.fxml");
+        SceneSwitcher.switchTo("musficur/marketingManagerDashboard.fxml");
     }
 
     @javafx.fxml.FXML
@@ -29,7 +29,7 @@ public class CampaignController
 
     @javafx.fxml.FXML
     public void logOutButtonOnAction(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("login-view.fxml");
+        SceneSwitcher.switchTo("faiaz/login-view.fxml");
     }
 
     @javafx.fxml.FXML

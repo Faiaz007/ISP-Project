@@ -28,11 +28,11 @@ public class OrderController
 
     @javafx.fxml.FXML
     public void previousButtonOnAction(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("inventoryManagerDashboard.fxml");
+        SceneSwitcher.switchTo("musficur/inventoryManagerDashboard.fxml");
     }
 
     @javafx.fxml.FXML
     public void logOutButtonOnAction(ActionEvent actionEvent) throws IOException{
-        SceneSwitcher.switchTo("login-view");
+        SceneSwitcher.switchTo("faiaz/login-view.fxml");
     }
 }

@@ -11,3 +11,6 @@ Description: aaaaf
 Issue Type: Slow Speed
 Description: ffffg
 --------------------------------------------------
+Issue Type: Billing Problem
+Description: facing issues
+--------------------------------------------------

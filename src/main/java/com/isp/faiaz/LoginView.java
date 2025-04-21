@@ -29,7 +29,7 @@ public class LoginView {
         String inputUsername = userNameTextField.getText().trim();
         String inputPassword = passwordTextField.getText().trim();
 
-        for (User user : UserManager.userList) {
+        for (User user : UserManager.getUserList()) {
             if (user.getUserName().equals(inputUsername) && user.getPassword().equals(inputPassword)) {
                 massageLabel.setText("Login successful! Welcome, " + user.getUserName());
                 SceneSwitcher.switchToDashboard();

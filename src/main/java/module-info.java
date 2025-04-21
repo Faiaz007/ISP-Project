@@ -2,6 +2,8 @@ module com.isp.isp {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.desktop;
+    requires kernel;
+    requires layout;
 
 
     opens com.isp to javafx.fxml;
