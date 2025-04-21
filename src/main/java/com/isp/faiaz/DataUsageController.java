@@ -76,7 +76,7 @@ public class DataUsageController
 
     @javafx.fxml.FXML
     public void handleFilterUsage(ActionEvent actionEvent) {
-        LocalDate from =fromDate.getValue();
+        LocalDate from = fromDate.getValue();
         LocalDate to = toDate.getValue();
 
         List<DataUsage> filteredDataUsage = dataUsageTableView.getItems().stream()

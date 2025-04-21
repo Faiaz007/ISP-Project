@@ -1,6 +1,7 @@
 package com.isp.fardeen;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -12,9 +13,9 @@ public class UserActivity
     @javafx.fxml.FXML
     private TableView activityTableView;
     @javafx.fxml.FXML
-    private TableColumn loginTableColumn;
+    private DatePicker datePicker;
     @javafx.fxml.FXML
-    private TextField filterByUseOrDateTextField;
+    private TableColumn customerIdTableColumn;
 
     @javafx.fxml.FXML
     public void initialize() {
