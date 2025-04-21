@@ -34,9 +34,37 @@ public class MarketingReportController
 
     @javafx.fxml.FXML
     public void getDataButtonOnAction(ActionEvent actionEvent) {
+        if (idTextField.getText().trim().isEmpty()){
+            marketingReportOutputLabel.setText(("Enter a  ID to Continue"));
+            return;
+        }
+        if (dataTextField.getText().trim().isEmpty()) {
+            marketingReportOutputLabel.setText(("Enter a data to Continue"));
+            return;
+        }
+        if (reportTypeTextField.getText().trim().isEmpty()) {
+            marketingReportOutputLabel.setText(("Enter Report type to Continue"));
+            return;
+        }
+
+        marketingReportOutputLabel.setText("Success");
     }
 
     @javafx.fxml.FXML
     public void generateButtonOnAction(ActionEvent actionEvent) {
+        if (idTextField.getText().trim().isEmpty()){
+            marketingReportOutputLabel.setText(("Enter a  ID to Continue"));
+            return;
+        }
+        if (dataTextField.getText().trim().isEmpty()) {
+            marketingReportOutputLabel.setText(("Enter a data to Continue"));
+            return;
+        }
+        if (reportTypeTextField.getText().trim().isEmpty()) {
+            marketingReportOutputLabel.setText(("Enter Report type to Continue"));
+            return;
+        }
+
+        marketingReportOutputLabel.setText("Success");
     }
 }

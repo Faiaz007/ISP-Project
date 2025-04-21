@@ -24,6 +24,20 @@ public class EquipmentDistributionController
 
     @javafx.fxml.FXML
     public void updateButtonOnAction(ActionEvent actionEvent) {
+        if (idTextField.getText().trim().isEmpty()){
+            equipmentDistributionOutputLabel.setText(("Enter a  ID to Continue"));
+            return;
+        }
+        if (technicianDetailsTextField.getText().trim().isEmpty()) {
+            equipmentDistributionOutputLabel.setText(("Enter a technician details to Continue"));
+            return;
+        }
+        if (equipmentDetailsTextField.getText().trim().isEmpty()) {
+            equipmentDistributionOutputLabel.setText(("Enter any preferences to Continue"));
+            return;
+        }
+
+        equipmentDistributionOutputLabel.setText("Updated and assign to Technician.");
     }
 
     @javafx.fxml.FXML

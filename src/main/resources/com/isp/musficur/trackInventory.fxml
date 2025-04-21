@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isp.musficur.TrackInventoryController">
    <children>
       <TextField fx:id="idTextField" layoutX="102.0" layoutY="97.0" />
@@ -32,5 +31,6 @@
       </TableView>
       <Button layoutX="13.0" layoutY="350.0" mnemonicParsing="false" onAction="#previousButtonOnAction" text="Previous" />
       <Button layoutX="521.0" layoutY="350.0" mnemonicParsing="false" onAction="#logOutButtonOnAction" text="Log Out" />
+      <Label fx:id="inventoryOutputLabel" layoutX="41.0" layoutY="267.0" prefHeight="17.0" prefWidth="538.0" />
    </children>
 </AnchorPane>
