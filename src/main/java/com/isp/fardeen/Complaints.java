@@ -22,4 +22,8 @@ public class Complaints
     @javafx.fxml.FXML
     public void resolveComplaintOnAction(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void goBackOnAction(ActionEvent actionEvent) {
+    }
 }

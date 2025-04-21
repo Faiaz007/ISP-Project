@@ -15,5 +15,6 @@
           <TableColumn fx:id="inactiveUserTableColumn" prefWidth="199.20001220703125" text="Inactive User" />
         </columns>
       </TableView>
+      <Button layoutX="314.0" layoutY="287.0" mnemonicParsing="false" onAction="#goBackOnAction" text="Go Back" />
     </children>
 </AnchorPane>

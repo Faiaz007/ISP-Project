@@ -25,4 +25,8 @@ public class AddNewUser
     @javafx.fxml.FXML
     public void addUserOnAction(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void goBackOnAction(ActionEvent actionEvent) {
+    }
 }

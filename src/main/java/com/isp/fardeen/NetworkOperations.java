@@ -23,4 +23,8 @@ public class NetworkOperations
     @javafx.fxml.FXML
     public void assignIssueOnAction(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void goBackOnAction(ActionEvent actionEvent) {
+    }
 }

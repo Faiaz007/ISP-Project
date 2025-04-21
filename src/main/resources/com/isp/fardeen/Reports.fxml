@@ -18,5 +18,6 @@
             <TableColumn fx:id="networkPerformanceTableColumn" prefWidth="184.00002136230466" text="Network Performance" />
          </columns></TableView>
         <Button layoutX="14" layoutY="340" onAction="#exportOnAction" text="Export" />
+      <Button layoutX="335.0" layoutY="353.0" mnemonicParsing="false" onAction="#goBackOnAction" text="Go Back" />
     </children>
 </AnchorPane>

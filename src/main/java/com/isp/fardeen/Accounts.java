@@ -22,4 +22,8 @@ public class Accounts
     @javafx.fxml.FXML
     public void updateAccountOnAction(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void goBackOnAction(ActionEvent actionEvent) {
+    }
 }

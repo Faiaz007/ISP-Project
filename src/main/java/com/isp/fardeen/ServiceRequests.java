@@ -22,4 +22,8 @@ public class ServiceRequests
     @javafx.fxml.FXML
     public void updateStatusOnAction(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void goBackOnAction(ActionEvent actionEvent) {
+    }
 }

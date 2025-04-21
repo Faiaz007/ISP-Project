@@ -6,7 +6,7 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="329.0" prefWidth="432.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.isp.fardeen.Permissions">
+<AnchorPane prefHeight="329.0" prefWidth="432.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isp.fardeen.Permissions">
     <children>
         <Label layoutX="14" layoutY="14" text="Manage Permissions" />
         <TableView fx:id="listOfUserTableView" layoutX="14" layoutY="50" prefHeight="150" prefWidth="299.0">
@@ -17,5 +17,6 @@
          </columns></TableView>
         <Button layoutX="14.0" layoutY="255.0" onAction="#updatePermissionOnAction" text="Update Permissions" />
         <Label fx:id="permissionNotification" layoutX="14" layoutY="250" />
+      <Button layoutX="344.0" layoutY="268.0" mnemonicParsing="false" onAction="#goBackOnAction" text="Go Back" />
     </children>
 </AnchorPane>

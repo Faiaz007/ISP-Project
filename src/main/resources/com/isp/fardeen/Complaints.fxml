@@ -6,7 +6,7 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="434.0" prefWidth="554.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.isp.fardeen.Complaints">
+<AnchorPane prefHeight="434.0" prefWidth="554.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isp.fardeen.Complaints">
     <Label layoutX="20" layoutY="20" text="Customer Complaints" />
     <TableView fx:id="complaintsTableView" layoutX="20" layoutY="60" prefHeight="200" prefWidth="356.0">
         <columns>
@@ -16,4 +16,5 @@
         </columns>
     </TableView>
     <Button layoutX="20" layoutY="280" onAction="#resolveComplaintOnAction" text="Resolve Complaint" />
+   <Button layoutX="376.0" layoutY="330.0" mnemonicParsing="false" onAction="#goBackOnAction" text="Go Back" />
 </AnchorPane>

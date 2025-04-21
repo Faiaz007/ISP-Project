@@ -21,4 +21,8 @@ public class Errors
     @javafx.fxml.FXML
     public void resolveErrorOnAction(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void goBackOnAction(ActionEvent actionEvent) {
+    }
 }

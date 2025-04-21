@@ -18,4 +18,8 @@ public class RemoveUser
     @javafx.fxml.FXML
     public void removeUserOnAction(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void goBackOnAction(ActionEvent actionEvent) {
+    }
 }

@@ -27,4 +27,8 @@ public class BillingInquiries
     @javafx.fxml.FXML
     public void resolveInquiryOnAction(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void goBackOnAction(ActionEvent actionEvent) {
+    }
 }

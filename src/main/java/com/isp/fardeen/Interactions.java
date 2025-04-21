@@ -24,4 +24,8 @@ public class Interactions
     @javafx.fxml.FXML
     public void exportLogOnAction(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void goBackOnAction(ActionEvent actionEvent) {
+    }
 }

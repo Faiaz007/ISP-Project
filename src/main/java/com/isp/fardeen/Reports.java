@@ -30,4 +30,8 @@ public class Reports
     @javafx.fxml.FXML
     public void exportOnAction(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void goBackOnAction(ActionEvent actionEvent) {
+    }
 }

@@ -22,4 +22,8 @@ public class Feedback
     @javafx.fxml.FXML
     public void respondOnAction(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void goBackOnAction(ActionEvent actionEvent) {
+    }
 }

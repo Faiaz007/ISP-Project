@@ -16,5 +16,6 @@
          </columns></TableView>
         <Button layoutX="14" layoutY="260" onAction="#assignIssueOnAction" text="Assign Issue" />
         <Label fx:id="notificationLabel" layoutX="14" layoutY="300" />
+      <Button layoutX="556.0" layoutY="371.0" mnemonicParsing="false" onAction="#goBackOnAction" text="Go Back" />
     </children>
 </AnchorPane>

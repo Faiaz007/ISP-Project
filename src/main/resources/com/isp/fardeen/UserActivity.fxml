@@ -17,5 +17,6 @@
          </columns></TableView>
         <Button layoutX="14" layoutY="300" onAction="#exportLogOnAction" text="Export Log" />
       <DatePicker fx:id="datePicker" layoutX="17.0" layoutY="261.0" />
+      <Button layoutX="414.0" layoutY="356.0" mnemonicParsing="false" onAction="#goBackOnAction" text="Go Back" />
     </children>
 </AnchorPane>

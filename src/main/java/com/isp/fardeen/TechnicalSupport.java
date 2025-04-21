@@ -22,4 +22,8 @@ public class TechnicalSupport
     @javafx.fxml.FXML
     public void tecnicalSupportOnAction(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void goBackOnAction(ActionEvent actionEvent) {
+    }
 }

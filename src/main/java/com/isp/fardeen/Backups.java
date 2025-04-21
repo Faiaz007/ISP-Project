@@ -22,4 +22,8 @@ public class Backups
     @javafx.fxml.FXML
     public void scheduleBackupOnAction(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void goBackOnAction(ActionEvent actionEvent) {
+    }
 }

@@ -18,4 +18,8 @@ public class ScheduleFollowups
     @javafx.fxml.FXML
     public void scheduleOnAction(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void goBackOnAction(ActionEvent actionEvent) {
+    }
 }

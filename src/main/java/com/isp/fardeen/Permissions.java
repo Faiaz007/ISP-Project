@@ -25,4 +25,8 @@ public class Permissions
     @javafx.fxml.FXML
     public void updatePermissionOnAction(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void goBackOnAction(ActionEvent actionEvent) {
+    }
 }
