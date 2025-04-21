@@ -24,7 +24,7 @@ public class SendReminderController {
     private final ObservableList<Bills> overdueBills = FXCollections.observableArrayList();
 
     @FXML
-    public void initialize() {
+    public void initialize() throws IOException {
         billIdColumn.setCellValueFactory(new PropertyValueFactory<>("billId"));
         amountColumn.setCellValueFactory(new PropertyValueFactory<>("amount"));
         dueDateColumn.setCellValueFactory(new PropertyValueFactory<>("dueDate"));
@@ -34,21 +34,27 @@ public class SendReminderController {
         overdueTable.setItems(overdueBills);
     }
 
-    private void loadOverdueBills() {
+    private void loadOverdueBills() throws IOException {
         overdueBills.clear();
-        try (ObjectInputStream in = new ObjectInputStream(new FileInputStream("bills.bin"))) {
-            while (true){
-                Bills bill = (Bills) in.readObject();
-                if (!"Payment Done".equalsIgnoreCase(bill.getStatus()) &&
-                        bill.getDueDate().isBefore(LocalDate.now())) {
+        File file = new File("data/bills.bin");
+        if (!file.exists()) {
+            reminderLabel.setText("No bills to remind.");
+            return;
+        }
+        try(ObjectInputStream input = new ObjectInputStream(new FileInputStream(file))){
+
+            while(true){
+                Bills bill = (Bills)input.readObject();
+                if(bill.getDueDate().isBefore(LocalDate.now())){
                     overdueBills.add(bill);
                 }
             }
+
         } catch (EOFException e) {
-            reminderLabel.setText("Found " + overdueBills.size() + " overdue bills.");
-        } catch (IOException | ClassNotFoundException e) {
+        } catch (Exception e){
             e.printStackTrace();
-            reminderLabel.setText("Failed to load bills.");
+            reminderLabel.setText("Error loading bills.");
+            return;
         }
     }
 
@@ -59,19 +65,17 @@ public class SendReminderController {
             return;
         }
 
-        try (FileWriter writer = new FileWriter("reminders.txt")) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("data/reminders.txt"))) {
             for (Bills bill : overdueBills) {
                 String msg = "Reminder sent for Bill ID: " + bill.getBillId();
-                System.out.println(msg);
-                writer.write(msg + "\n");
+                writer.write(msg);
+                writer.newLine();
             }
+            reminderLabel.setText("Reminders saved for " + overdueBills.size() + " bills.");
         } catch (IOException e) {
             e.printStackTrace();
-            reminderLabel.setText("Failed to export reminders.");
-            return;
+            reminderLabel.setText("Failed to save reminders.");
         }
-
-        reminderLabel.setText("Reminders sent for " + overdueBills.size() + " bills. Saved to reminders.txt.");
     }
 
     @FXML

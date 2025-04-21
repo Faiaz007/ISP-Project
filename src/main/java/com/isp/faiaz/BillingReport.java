@@ -50,12 +50,10 @@ public class BillingReport {
     }
 
     public void generateReport() {
-        // In a real system, this would generate a report file
         System.out.println("Generating " + reportType + " report: " + reportId);
     }
 
     public void exportReport() {
-        // In a real system, this would export to CSV, PDF, etc.
         System.out.println("Exporting report: " + reportId);
     }
 

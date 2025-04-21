@@ -28,11 +28,21 @@ public class BillingManagerGoalsController
 
     @javafx.fxml.FXML
     public void openBillGeneratorView(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("faiazGenerateBills.fxml");
+        SceneSwitcher.switchTo("faiaz/GenerateBills.fxml");
     }
 
     @javafx.fxml.FXML
     public void openReminderView(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchTo("faiaz/SendReminder.fxml");
+    }
+
+    @javafx.fxml.FXML
+    public void openRefundAndDiscount(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("faiaz/RefundsDiscount.fxml");
+    }
+
+    @javafx.fxml.FXML
+    public void openOverduePayment(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("faiaz/OverDue.fxml");
     }
 }

@@ -4,6 +4,7 @@ module com.isp.isp {
     requires java.desktop;
     requires kernel;
     requires layout;
+    requires org.bouncycastle.provider;
 
 
     opens com.isp to javafx.fxml;

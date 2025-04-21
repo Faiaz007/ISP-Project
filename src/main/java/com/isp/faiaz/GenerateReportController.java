@@ -27,6 +27,7 @@ public class GenerateReportController
     @javafx.fxml.FXML
     public void generateAndExportPdf(ActionEvent actionEvent) {
 
+
     }
 
 

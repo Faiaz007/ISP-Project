@@ -15,7 +15,8 @@ public class DashboardController
     }
 
     @javafx.fxml.FXML
-    public void handleAdmin(ActionEvent actionEvent) {
+    public void handleAdmin(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("fardeen/SystemAdminGoals.fxml");
     }
 
     @javafx.fxml.FXML

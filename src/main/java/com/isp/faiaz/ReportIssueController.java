@@ -38,7 +38,7 @@ public class ReportIssueController
         if (type == null || description.isEmpty()) {
             confirmationLabel.setText("Please fill in all fields.");
         }
-        try (FileWriter writer = new FileWriter("data.txt", true)) {
+        try (FileWriter writer = new FileWriter("data/data.txt", true)) {
             writer.write("Issue Type: " + type + "\n");
             writer.write("Description: " + description + "\n");
             writer.write("--------------------------------------------------\n");
@@ -56,7 +56,7 @@ public class ReportIssueController
 
     @javafx.fxml.FXML
     public void handleLoadIssues(ActionEvent actionEvent)  {
-        try (BufferedReader reader = new BufferedReader(new FileReader("data.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("data/data.txt"))) {
             StringBuilder content = new StringBuilder();
             String line;
 

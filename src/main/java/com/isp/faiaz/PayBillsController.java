@@ -89,7 +89,7 @@ public class PayBillsController {
     }
 
     private void saveBillsToFile() {
-        try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("bills.bin"))) {
+        try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("data/bills.bin"))) {
             for (Bills b : billData) {
                 out.writeObject(b);
             }
@@ -99,7 +99,7 @@ public class PayBillsController {
     }
 
     private void savePaymentsToFile() {
-        try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("payments.bin"))) {
+        try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("data/payments.bin"))) {
             for (Payment p : paymentData) {
                 out.writeObject(p);
             }
