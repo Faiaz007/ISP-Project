@@ -23,41 +23,44 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.util.List;
 
-public class DataUsageController
-{
+public class DataUsageController {
     @javafx.fxml.FXML
     private DatePicker fromDate;
     @javafx.fxml.FXML
-    private TableColumn<DataUsage,String> planNameColumn;
+    private TableColumn<DataUsage, String> planNameColumn;
     @javafx.fxml.FXML
     private TableView<DataUsage> dataUsageTableView;
     @javafx.fxml.FXML
-    private TableColumn<DataUsage,String> timeSlotColumn;
+    private TableColumn<DataUsage, String> timeSlotColumn;
     @javafx.fxml.FXML
-    private TableColumn <DataUsage,String> userIdColumn;
+    private TableColumn<DataUsage, String> userIdColumn;
     @javafx.fxml.FXML
-    private TableColumn<DataUsage,Double> dataUsedColumn;
+    private TableColumn<DataUsage, Double> dataUsedColumn;
     @javafx.fxml.FXML
     private DatePicker toDate;
     @javafx.fxml.FXML
-    private TableColumn<DataUsage,String> dateColumn;
+    private TableColumn<DataUsage, String> dateColumn;
     private final ObservableList<DataUsage> allData = FXCollections.observableArrayList();
+
     @javafx.fxml.FXML
     public void initialize() {
-      userIdColumn.setCellValueFactory(new PropertyValueFactory<>("dataUsageId"));
-      planNameColumn.setCellValueFactory(new PropertyValueFactory<>("planName"));
-      timeSlotColumn.setCellValueFactory(new PropertyValueFactory<>("timeSlot"));
-      dataUsedColumn.setCellValueFactory(new PropertyValueFactory<>("dataUsed"));
-      dateColumn.setCellValueFactory(new PropertyValueFactory<>("date"));
+        userIdColumn.setCellValueFactory(new PropertyValueFactory<>("dataUsageId"));
+        planNameColumn.setCellValueFactory(new PropertyValueFactory<>("planName"));
+        timeSlotColumn.setCellValueFactory(new PropertyValueFactory<>("timeSlot"));
+        dataUsedColumn.setCellValueFactory(new PropertyValueFactory<>("dataUsed"));
+        dateColumn.setCellValueFactory(new PropertyValueFactory<>("date"));
 
-      fromDate.setValue(LocalDate.now().minusMonths(1));
-      toDate.setValue(LocalDate.now());
-      allData.addAll(
-                new DataUsage("U001", "Basic", LocalDate.now().minusDays(1), 450, "Morning"),
-                new DataUsage("U002", "Pro", LocalDate.now(), 800, "Evening"),
-                new DataUsage("U001", "Basic", LocalDate.now(), 300, "Afternoon")
+        fromDate.setValue(LocalDate.now().minusMonths(1));
+        toDate.setValue(LocalDate.now());
+        allData.addAll(
+                new DataUsage("U001", "Basic", LocalDate.of(2025, 6, 20), 450, "Morning"),
+                new DataUsage("U002", "Pro", LocalDate.of(2025, 5, 25), 800, "Evening"),
+                new DataUsage("U003", "Premium", LocalDate.of(2025, 4, 10), 1200, "Night"),
+                new DataUsage("U004", "Pro", LocalDate.of(2025, 3, 28), 950, "Morning"),
+                new DataUsage("U005", "Basic", LocalDate.of(2025, 3, 15), 400, "Evening"),
+                new DataUsage("U005", "Basic", LocalDate.of(2025, 2, 7), 650, "Night")
         );
-      dataUsageTableView.setItems(FXCollections.observableList(allData));
+        dataUsageTableView.setItems(FXCollections.observableList(allData));
 
 
     }
@@ -104,9 +107,6 @@ public class DataUsageController
         System.out.println("PDF would be saved to: " + file.getAbsolutePath());
 
 
-
-
-
     }
 
 
@@ -115,9 +115,19 @@ public class DataUsageController
         LocalDate from = fromDate.getValue();
         LocalDate to = toDate.getValue();
 
-        List<DataUsage> filteredDataUsage = dataUsageTableView.getItems().stream()
-                .filter(dataUsage -> dataUsage.getDate().isAfter(from) && dataUsage.getDate().isBefore(to))
-                .toList();
-        dataUsageTableView.setItems(FXCollections.observableList(filteredDataUsage));
+        ObservableList<DataUsage> filteredList = FXCollections.observableArrayList();
+
+        for (DataUsage dataUsage : allData) {
+            LocalDate date = dataUsage.getDate();
+
+            boolean afterFrom = (from == null) || (date.isEqual(from) || date.isAfter(from));
+            boolean beforeTo = (to == null) || (date.isEqual(to) || date.isBefore(to));
+
+            if (afterFrom && beforeTo) {
+                filteredList.add(dataUsage);
+            }
+        }
+
+        dataUsageTableView.setItems(filteredList);
     }
 }

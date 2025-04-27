@@ -29,23 +29,41 @@ public class InventoryRecordsController
 
     @javafx.fxml.FXML
     public void updateInventoryButtonOnAction(ActionEvent actionEvent) {
+
         if (idTextField.getText().trim().isEmpty()){
-            inventoryRecordOutputLabel.setText(("Enter a  ID to Continue"));
-            return;
-        }
-        if (typeTextField.getText().trim().isEmpty()) {
-            inventoryRecordOutputLabel.setText(("Enter type to Continue"));
-            return;
-        }
-        if (modelTextField.getText().trim().isEmpty()) {
-            inventoryRecordOutputLabel.setText(("Enter any model to Continue"));
-            return;
-        }
-        if (quantityTextField.getText().trim().isEmpty()) {
-            inventoryRecordOutputLabel.setText(("Enter quantity to Continue"));
+            inventoryRecordOutputLabel.setText("Enter an ID to Continue");
             return;
         }
 
+
+        if (typeTextField.getText().trim().isEmpty()) {
+            inventoryRecordOutputLabel.setText("Enter type to Continue");
+            return;
+        }
+
+        if (modelTextField.getText().trim().isEmpty()) {
+            inventoryRecordOutputLabel.setText("Enter a model to Continue");
+            return;
+        }
+
+
+        String quantityText = quantityTextField.getText().trim();
+        if (quantityText.isEmpty()) {
+            inventoryRecordOutputLabel.setText("Enter quantity to Continue");
+            return;
+        }
+
+
+        try {
+            int quantity = Integer.parseInt(quantityText);
+            if (quantity <= 0) {
+                inventoryRecordOutputLabel.setText("Quantity must be a positive number.");
+                return;
+            }
+        } catch (NumberFormatException e) {
+            inventoryRecordOutputLabel.setText("Error: Please enter a valid integer for quantity.");
+            return;
+        }
 
         inventoryRecordOutputLabel.setText("Inventory record Successful");
     }

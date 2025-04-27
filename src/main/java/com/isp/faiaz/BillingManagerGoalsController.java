@@ -38,7 +38,7 @@ public class BillingManagerGoalsController
 
     @javafx.fxml.FXML
     public void openRefundAndDiscount(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("faiaz/RefundsDiscount.fxml");
+        SceneSwitcher.switchTo("faiaz/RefundsDiscounts.fxml");
     }
 
     @javafx.fxml.FXML
