@@ -1,3 +1,6 @@
 Issue Type: Slow Speed
 Description: Very Slow
 --------------------------------------------------
+Issue Type: Connectivity Issue
+Description: JAHJCHAOJH
+--------------------------------------------------
